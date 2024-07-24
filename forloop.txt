@@ -1,0 +1,2029 @@
+20-june-24
+1.print 1 to n with difference 
+2.print 1 to n with difference 
+3.print 1 to n with differenc
+4.print 1 to 100 with difference 10
+5.Print Even number up to n.
+6.print odd number up to n.
+7.Print the sum of n number.
+8.sum of even no upto n.
+9.sum of odd number upto n.
+10.print the sum from x to y number.
+
+          21-june-2024 
+11. print the multiplication table.
+12.Write a java program for power of given number.
+13. Write a java program for factorial of given number.
+14.write a java program to check wether given number is pronic number or not.
+15.write a java program of to print Multiplication table without using (*) operator
+16.write program to accept 1 character from user & also accept range(n) from user & diplay next n charater
+17)Accept 1 no from user & display its factors.
+           
+            22-june-2024 
+18.write a java program to check prime number.
+19. Write a java program of perfect number.
+20. write a java program for find Fibonacci series.
+21.write a java program for find GCD and LCM.AA						
+22.Any five program of for loop.(22 to 26)
+23.
+24.
+25
+26.              24-june-2024 
+1.write a java program for perfect square.
+2.print sum=1x=2x+3x+4x……
+3.print sum=1x+2x+3x+……
+4.write a program to print number divisibal by 5 and 7 up 1 to n number.
+5.print the sum of sum=1+3+5+7…..
+6. print sum=1.0+1.1+1.2+1.3+…….
+7.print sum=1/2+3/4+5/6……
+8.print sum=1+4+9+16……
+9.print sum=1+8+27+……
+
+
+
+
+1)
+package iterativestatement;
+import java.util.*;
+public class forloop {
+	public static void main (String args[]){
+int i,n;
+System.out.println("Enter n:");
+Scanner sc=new Scanner(System.in);
+n=sc.nextInt();
+
+for(i=1;i<=n;i++)
+{
+	System.out.println(""+i);
+}
+
+}
+}
+2)
+package iterativestatement;
+import java.util.*;
+public class forloop {
+	public static void main (String args[]){
+int i,n;
+System.out.println("Enter n:");
+Scanner sc=new Scanner(System.in);
+n=sc.nextInt();
+
+for(i=10;i<=n;i=i+5)
+{
+	System.out.println(""+i);
+}
+
+}
+}
+3)
+package iterativestatement;
+import java.util.*;
+public class forloop {
+	public static void main (String args[]){
+int i,n;
+System.out.println("Enter n:");
+Scanner sc=new Scanner(System.in);
+n=sc.nextInt();
+
+for(i=n;i>=1;i--)
+{
+	System.out.println(""+i);
+}
+
+}
+}
+4)
+package iterativestatement;
+import java.util.*;
+public class forloop {
+	public static void main (String args[]){
+int i,n;
+System.out.println("Enter n:");
+Scanner sc=new Scanner(System.in);
+n=sc.nextInt();
+
+for(i=n;i>=100;i=i-10)
+{
+	System.out.println(""+i);
+}
+
+}
+}
+5)
+package iterativestatement;
+import java.util.*;
+public class forloop {
+	public static void main (String args[]){
+int i,n;
+System.out.println("Enter n:");
+Scanner sc=new Scanner(System.in);
+n=sc.nextInt();
+
+for(i=2;i<=n;i=i+2)
+{
+	System.out.println(""+i);
+}
+
+}
+}
+6)
+package iterativestatement;
+import java.util.*;
+public class forloop {
+	public static void main (String args[]){
+int i,n;
+System.out.println("Enter n:");
+Scanner sc=new Scanner(System.in);
+n=sc.nextInt();
+
+for(i=1;i<=n;i=i+2)
+{
+	System.out.println(""+i);
+}
+
+}
+}
+7)
+package iterativestatement;
+import java.util.*;
+public class forloop {
+	public static void main (String args[]){
+int i,n,sum=0;
+System.out.println("Enter n:");
+Scanner sc=new Scanner(System.in);
+n=sc.nextInt();
+
+for(i=1;i<=n;i++)
+{
+	sum=sum+i;
+	
+}
+System.out.println(""+sum);
+}
+}
+8)
+package iterativestatement;
+import java.util.*;
+public class forloop {
+	public static void main (String args[]){
+int i,n,sum=0;
+System.out.println("Enter n:");
+Scanner sc=new Scanner(System.in);
+n=sc.nextInt();
+
+for(i=2;i<=n;i=i+2)
+{
+	sum=sum+i;
+	
+}
+System.out.println(""+sum);
+}
+}
+9)
+package iterativestatement;
+import java.util.*;
+public class forloop {
+	public static void main (String args[]){
+int i,n,sum=0;
+System.out.println("Enter n:");
+Scanner sc=new Scanner(System.in);
+n=sc.nextInt();
+
+for(i=1;i<=n;i=i+2)
+{
+	sum=sum+i;
+	
+}
+System.out.println(""+sum);
+}
+}
+10)
+package iterativestatement;
+import java.util.*;
+public class forloop {
+	public static void main (String args[]){
+int i,x,y,sum=0;
+System.out.println("Enter x&y:");
+Scanner sc=new Scanner(System.in);
+x=sc.nextInt();
+y=sc.nextInt();
+if(x<y)
+{
+for(i=x;i<=y;i++)
+{
+	sum=sum+i;
+	
+}
+}
+else
+{
+	for(i=x;i>=y;i--)
+	{
+		sum=sum+i;
+	}
+}
+System.out.println(""+sum);
+}
+}
+11)package iterativestatement;
+import java.util.*;
+public class forloop {
+	public static void main (String args[]){
+int n,i,f1=1;
+System.out.println("Enter n:");
+Scanner sc=new Scanner(System.in);
+n=sc.nextInt();
+for(i=n;i>1;i--)
+{
+	f1=f1*i;
+}
+System.out.println("Factorial="+f1);
+}
+}
+12)
+package iterativestatement;
+import java.util.*;
+public class forloop {
+	public static void main (String args[]){
+int n,i,f1=1;
+System.out.println("Enter n:");
+Scanner sc=new Scanner(System.in);
+n=sc.nextInt();
+for(i=1;i<=10;i++)
+{
+	f1=n*i;
+	System.out.println(n+"*"+i+"="+f1);
+}
+
+}
+}
+13)
+package iterativestatement;
+import java.util.*;
+public class forloop {
+	public static void main (String args[]){
+int n,i,f1=0;
+System.out.println("Enter n:");
+Scanner sc=new Scanner(System.in);
+n=sc.nextInt();
+for(i=1;i<=10;i++)
+{
+	f1=f1+n;
+	System.out.println(n+"*"+i+"="+f1);
+}
+
+}
+}
+14)x^n
+package iterativestatement;
+import java.util.*;
+public class forloop {
+	public static void main (String args[]){
+int n,i,x,f1=1;
+System.out.println("Enter n and x:");
+Scanner sc=new Scanner(System.in);
+n=sc.nextInt();
+x=sc.nextInt();
+for(i=1;i<=n;i++)
+{
+	f1=f1*x;
+	System.out.println(""+f1);
+}
+
+}
+}
+15)
+package iterativestatement;
+import java.util.*;
+public class forloop {
+	public static void main (String args[]){
+int n,i,flag=0;
+System.out.println("Enter n");
+Scanner sc=new Scanner(System.in);
+n=sc.nextInt();
+for(i=1;i<=n;i++)
+{
+	if(n==(i*(i+1)))
+	{
+		flag=1;
+		break;
+	}
+}
+if(flag==1)
+{
+	System.out.println("Pronic Number");
+}
+
+	else
+	{
+		System.out.println(" Not a Pronic Number");
+	}
+}
+
+}
+16)
+package iterativestatement;
+import java.util.*;
+public class forloop {
+	public static void main (String args[]){
+int n,i;
+char ch;
+System.out.println("Enter ch and range:");
+Scanner sc=new Scanner(System.in);
+ch=sc.next().charAt(0);
+n=sc.nextInt();
+for(i=1;i<=n;i++)
+{
+	System.out.println("\t"+(ch++));
+}
+
+}
+}
+17)
+package iterativestatement;
+import java.util.*;
+public class forloop {
+	public static void main (String args[]){
+int n,i,sum=0;
+System.out.println("Enter number:");
+Scanner sc=new Scanner(System.in);
+n=sc.nextInt();
+for(i=1;i<=(n/2);i++)
+{
+	if(n%i==0)
+	{
+	System.out.println(""+i);
+	}
+}
+
+}
+}
+18)
+package iterativestatement;
+import java.util.*;
+public class forloop {
+hg 	public static void main (String args[]){
+int n,i,flag=0;
+System.out.println("Enter n");
+Scanner sc=new Scanner(System.in);
+n=sc.nextInt();
+for(i=2;i<=n/2;i++)
+{
+	if(n%i==0)
+	{
+		flag=1;
+		break;
+	}
+}
+if(flag==0)
+{
+	System.out.println("Prime Number");
+}
+
+	else
+	{
+		System.out.println(" Not a Prime Number");
+	}
+}
+
+}
+19)
+package iterativestatement;
+import java.util.*;
+public class forloop {
+	public static void main (String args[]){
+int n,i,sum=0;
+System.out.println("Enter n");
+Scanner sc=new Scanner(System.in);
+n=sc.nextInt();
+for(i=1;i<=(n/2);i++)
+{
+  if(n%i==0)
+	  sum=sum+i;
+  }
+if(sum==n)
+{
+  System.out.println("Perfect number");
+}                                                                                                                                                                                   
+  else
+  {
+	  System.out.println(" not a Perfect number");
+  }
+}
+}
+20) Fibonacci
+package iterativestatement;
+import java.util.*;
+public class forloop {
+	public static void main (String args[]){
+int n,i,f1=0,f2=1,f3;
+System.out.println("Enter n");
+Scanner sc=new Scanner(System.in);
+n=sc.nextInt();
+if(n<=0)
+{
+	System.out.println("Invalid");
+}
+else if(n==1)
+{
+	System.out.print(" "+f1);
+}
+else
+{
+	System.out.print(f1+" "+f2);
+}
+	for(i=2;i<n;i++)
+	{
+		f3=f1+f2;
+		System.out.print(" "+f3);
+		f1=f2;
+		f2=f3;
+	}
+}
+}
+21)
+package iterativestatement;
+import java.util.*;
+public class forloop {
+	public static void main (String args[]){
+int i;
+for(i=1;i<=100;i++)
+{
+	if(i%3==0&&i%7==0)
+	{
+		System.out.println(" "+i);
+	}
+}
+
+}
+}
+
+22)
+package iterativestatement;
+import java.util.*;
+public class forloop {
+	public static void main (String args[]){
+int i;
+for(i=1;i<=100;i++)
+{
+	System.out.print(" "+i);
+	if(i%5==0)
+	{
+		System.out.print(" ");
+	}
+}
+
+}
+}
+
+
+
+23)
+package iterativestatement;
+import java.util.*;
+public class forloop {
+	public static void main (String args[]){
+int i,n,sq=0;
+Scanner sc=new Scanner(System.in);
+System.out.println("Enter number");
+n=sc.nextInt();
+for(i=1;i<=n;i++)
+{
+ sq=sq+n;
+}
+System.out.println("Square is"+sq);
+
+}
+}
+24)
+package iterativestatement;
+import java.util.*;
+public class forloop {
+	public static void main (String args[]){
+int i,n;
+Scanner sc=new Scanner(System.in);
+System.out.println("Enter number");
+n=sc.nextInt();
+for(i=1;i<=n;i++)
+{
+	System.out.println("Vaishnavi..");
+}
+
+}
+}
+25)
+package iterativestatement;
+import java.util.*;
+public class forloop {
+	public static void main (String args[]){
+int i;
+for(i=1;i<=100;i++)
+{
+	if(i%5==0&&i%6==0)
+	{
+		System.out.println(" "+i);
+	}
+}
+
+}
+}
+26)sum=1x+3x+5x....
+package iterativestatement;
+import java.util.*;
+public class forloop {
+	public static void main (String args[]){
+int i,n,sum=0;
+Scanner sc=new Scanner(System.in);
+System.out.println("Enter n:");
+n=sc.nextInt();
+ 
+for(i=1;i<=n;i=i+2)
+{
+	sum=sum+i;
+	
+}
+System.out.println(sum+"=");
+for(i=1;i<n;i=i+2)
+{
+	System.out.println(i+"x+");
+}
+System.out.println(i+"x");
+}
+}
+27)1x+2x+3x...
+package iterativestatement;
+import java.util.*;
+public class forloop {
+	public static void main (String args[]){
+int i,n,sum=0;
+Scanner sc=new Scanner(System.in);
+System.out.println("Enter n:");
+n=sc.nextInt();
+ 
+for(i=1;i<=n;i++)
+{
+	sum=sum+i;
+	
+}
+System.out.print(sum+"=");
+for(i=1;i<n;i++) {
+
+	System.out.print(i+"x+");
+}
+System.out.print(i+"x");
+}
+}
+28)
+package iterativestatement;
+import java.util.*;
+public class forloop {
+	public static void main(String[] args) {
+		Scanner sc=new Scanner(System.in);
+		int n,i;
+		double ans;
+		System.out.println("Enter n");
+		n=sc.nextInt();
+		ans=Math.sqrt(n);
+		if((ans*ans)==n)
+			System.out.println("Perfect Square");
+		else
+			System.out.println("Not Perfect Square");
+			}
+}
+29)
+package iterativestatement;
+import java.util.*;
+public class forloop {
+		public static void main(String[] args) {
+		Scanner sc=new Scanner(System.in);
+		System.out.println("Enter the n1:");
+		int n1=sc.nextInt();
+		int n3=0;
+		System.out.println("Enter the n2:");
+		int n2=sc.nextInt();
+		for(int i=1;i<n2;i++)
+		{
+		    if(n1%i==0)
+		    {
+		     if(n2%i==0)
+		     {
+		       n3=i;  
+		     }
+		    }
+		}
+		System.out.println("GCD :"+n3);
+		
+		System.out.println("LCM :"+((n1*n2)/n3));
+		
+		
+		}
+	}
+30)
+package iterativestatement;
+import java.util.*;
+public class forloop {
+	public static void main (String args[]){
+int i;
+for(i=1;i<=100;i++)
+{
+	if(i%3==0&&i%7==0)
+	{
+		System.out.println(" "+i);
+	}
+}
+
+}
+}
+31)
+package iterativestatement;
+import java.util.*;
+public class forloop {
+	public static void main(String[] args) {
+		Scanner sc=new Scanner(System.in);
+		System.out.println("enter the no:");
+		int n=sc.nextInt();
+		for(int i=1;i<n;i++)
+		{
+		    if(i%5==0 && i%7==0)
+		    {
+		        System.out.print(" "+i);
+		    }
+		}
+	}
+}
+32)
+package iterativestatement;
+import java.util.*;
+public class forloop {
+	public static void main(String[] args) {
+		Scanner sc=new Scanner(System.in);
+		System.out.println("enter the no:");
+		double n=sc.nextDouble();
+		double sum=0;
+		for(double i=1;i<=n;i=i+0.1)
+		{
+		   sum=sum+i;
+		}
+		double j;
+		System.out.printf("%.2f=",sum);
+		for( j=1;j<n;j=j+0.1)
+		{
+		    System.out.printf("%.1f+",j);
+		}
+		System.out.printf("%.1f",j);
+		
+	}
+}
+33)
+package iterativestatement;
+import java.util.*;
+public class forloop {
+	public static void main(String[] args) {
+		Scanner sc=new Scanner(System.in);
+		System.out.println("enter the no:");
+		int n=sc.nextInt();
+		double sum=0;
+		for(double i=1;i<=n;i=i+2)
+		{
+		    sum=sum+(i/(i+1));
+		    
+		}
+		int j;
+		System.out.printf("%f=",sum);
+		for( j=1;j<n;j=j+2)
+		{
+		    System.out.printf("(%d/%d)+",j,j+1);
+		}
+	 System.out.printf("(%d/%d)",j,j+1);
+	}
+}
+34)
+package iterativestatement;
+import java.util.*;
+public class forloop {
+			public static void main(String[] args) {
+				Scanner sc=new Scanner(System.in);
+				System.out.println("enter the no:");
+				int n=sc.nextInt();
+				int sum=0;
+				for(int i=1;i<=n;i++)
+				{
+				   sum=sum+(i*i);
+				}
+				int j;
+				System.out.print(""+sum+"=");
+				for( j=1;j<n;j++)
+				{
+				    System.out.printf(""+(j*j)+"+");
+				}
+				System.out.print(""+(j*j));
+				
+			}
+		}
+
+35)
+package iterativestatement;
+import java.util.*;
+public class forloop {
+		public static void main(String[] args) {
+			Scanner sc=new Scanner(System.in);
+			System.out.println("enter the no:");
+			int n=sc.nextInt();
+			int sum=0;
+			for(int i=1;i<=n;i++)
+			{
+			   sum=sum+(i*i*i);
+			}
+			int j;
+			System.out.print(""+sum+"=");
+			for( j=1;j<n;j++)
+			{
+			    System.out.printf(""+(j*j*j)+"+");
+			}
+			System.out.print(""+(j*j*j));
+			
+		}
+	}
+
+-------------------------------PATTERN---------------------------------------------
+1)package iterativestatement;
+import java.util.*;
+public class forloop {
+		public static void main(String[] args) {
+			Scanner sc=new Scanner(System.in);
+			System.out.println("enter the no:");
+			int n,i,j;
+			 n=sc.nextInt();
+			
+			for(i=1;i<=n;i++)
+			{
+		
+			for(j=1;j<=i;j++)
+			{
+				System.out.print(" "+j);
+			}
+			System.out.println(" ");
+			}
+		}
+	}
+2)
+package iterativestatement;
+import java.util.*;
+public class forloop {
+		public static void main(String[] args) {
+			Scanner sc=new Scanner(System.in);
+			System.out.println("enter the no:");
+			int n,i,j;
+			 n=sc.nextInt();
+			
+			for(i=1;i<=n;i++)
+			{
+		
+			for(j=1;j<=i;j++)
+			{
+				System.out.print(" "+i);
+			}
+			System.out.println(" ");
+			}
+		}
+	}
+3)
+package iterativestatement;
+import java.util.*;
+public class forloop {
+		public static void main(String[] args) {
+			Scanner sc=new Scanner(System.in);
+			System.out.println("enter the no:");
+			int n,i,j;
+			 n=sc.nextInt();
+			
+			for(i=1;i<=n;i++)
+			{
+		
+			for(j=1;j<=i;j++)
+			{
+				System.out.print(" *");
+			}
+			System.out.println(" ");
+			}
+		}
+	}
+4)
+package iterativestatement;
+import java.util.*;
+public class forloop {
+		public static void main(String[] args) {
+			Scanner sc=new Scanner(System.in);
+			System.out.println("enter the no:");
+			int n,i,j;
+			 n=sc.nextInt();
+			
+			for(i=1;i<=n;i++)
+			{
+		
+			for(j=1;j<=i;j++)
+			{
+				System.out.print(" @ ");
+			}
+			System.out.println(" ");
+			}
+		}
+	}
+5)
+package iterativestatement;
+import java.util.*;
+public class forloop {
+		public static void main(String[] args) {
+			Scanner sc=new Scanner(System.in);
+			System.out.println("enter the no:");
+			int n,i,j,num=1;
+			 n=sc.nextInt();
+			
+			for(i=1;i<=n;i++)
+			{
+		
+			for(j=1;j<=i;j++)
+			{
+				System.out.print(num+" ");
+				num++;
+			}
+			System.out.println(" ");
+			}
+		}
+	}
+6)
+package iterativestatement;
+import java.util.*;
+public class forloop {
+		public static void main(String[] args) {
+	        int n,i,j,k=1;
+	        Scanner sc=new Scanner(System.in);
+	        System.out.println("Enter a number");
+	        n=sc.nextInt();
+	        for ( i = 1; i <= n; i++) 
+	        { 
+	            for (j = 1; j <= i; j++)
+	            { 
+	                System.out.print(k + " ");
+	                k += 2; 
+	            }
+	                System.out.println();
+	        }
+	        
+	        }
+
+		}
+7)
+package iterativestatement;
+import java.util.*;
+public class forloop {
+		public static void main(String[] args) {
+	        int n,i,j,ch=65;
+	        Scanner sc=new Scanner(System.in);
+	        System.out.println("Enter a number");
+	        n=sc.nextInt();
+	        for(i=1;i<=n;i++) 
+	        {
+	            for (j = 1; j <= i; j++)
+	            {
+	                System.out.print(" " + (char)(ch++));
+	            }
+	            System.out.println();
+
+	        }
+
+	        
+	        }
+
+		}
+	
+import java.util.*;
+public class Main {
+		public static void main(String[] args) {
+	        int n,i,j,ch=65;
+	        
+	        System.out.println("Enter a number");
+	        Scanner sc=new Scanner(System.in);
+	        n=sc.nextInt();
+	        for(i=1;i<=n;i++) 
+	        {
+	            for (j = 1; j <= i; j++)
+	            {
+	                System.out.print(" " + (char)(ch++));
+	            }
+	            System.out.println();
+
+	 }
+
+	        
+	}
+
+		}
+	
+
+8)
+import java.util.*;
+public class Main
+{
+    public static void main(String[] args)
+    {
+        int n,i,j;
+        char  ch;
+
+        Scanner sc=new Scanner(System.in);
+        System.out.println("Enter a number");
+        n=sc.nextInt();
+        for (i = 1; i <= n; i++)
+        {
+            for ( j = 1; j <= i; j++)
+            {
+               ch = (char) ('A' + i - 1);
+                System.out.print(" "+ch);
+            }
+            System.out.println();
+
+        }
+
+9)
+import java.util.*;
+public class Main
+{
+    public static void main(String[] args)
+    {
+        int n,i,j, ch=96;
+
+        Scanner sc=new Scanner(System.in);
+        System.out.println("Enter a number");
+        n=sc.nextInt();
+        for(i=1;i<=n;i++) {
+            for (j = 1; j <= i; j++) {
+                System.out.print(" "+(char)(ch+j));
+            }
+            System.out.println();
+        }
+    }
+}
+10)
+import java.util.*;
+public class Main
+{
+    public static void main(String[] args)
+    {
+        int n,i,j;
+        char  ch;
+
+        Scanner sc=new Scanner(System.in);
+        System.out.println("Enter a number");
+        n=sc.nextInt();
+        for (i = 1; i <= n; i++)
+        {
+            for ( j = 1; j <= i; j++)
+            {
+               ch = (char) ('a' + i - 1);
+                System.out.print(" "+ch);
+            }
+            System.out.println();
+
+        }
+    }
+}
+
+11)
+import java.util.*;
+public class Main
+{
+    public static void main(String[] args)
+    {
+        int n,i,j;
+        char ch='a';
+        Scanner sc=new Scanner(System.in);
+        System.out.println("Enter a number");
+        n=sc.nextInt();
+        for(i=1;i<=n;i++) {
+            for (j = 1; j <= i; j++) {
+                System.out.print(ch+" ");
+                ch++;
+            }
+            System.out.println();
+
+        }
+    }
+}
+
+12)
+import java.util.*;
+public class Main
+{
+    public static void main(String[] args)
+    {
+        int n,i,j;
+        char ch='A';
+        Scanner sc=new Scanner(System.in);
+        System.out.println("Enter a number");
+        n=sc.nextInt();
+        for(i=1;i<=n;i++) {
+            for (j = 1; j <= i; j++) {
+                System.out.print(ch+" ");
+                ch++;
+            }
+            System.out.println();
+
+        }
+    }
+}
+13)
+import java.util.*;
+public class noke
+{
+    public static void main(String[] args)
+    {
+        int n,i,j;
+        int ch=64,ch1=96;
+        Scanner sc=new Scanner(System.in);
+        System.out.println("Enter a number");
+        n=sc.nextInt();
+
+        for(i=1;i<=n;i++) {
+
+            for (j = 1; j <= i; j++) {
+                System.out.print(""+(char)(ch+j)+(char)(ch1+j));
+            }
+            System.out.println();
+        }
+    }
+  }
+
+14)
+import java.util.*;
+public class noke
+{
+    public static void main(String[] args)
+    {
+        int n,i,j;
+        int ch=64,ch1=96;
+        Scanner sc=new Scanner(System.in);
+        System.out.println("Enter a number");
+        n=sc.nextInt();
+
+        for(i=1;i<=n;i++) {
+
+            for (j = 1; j <= i; j++) {
+                System.out.print(" "+(char)(ch+i)+(char)(ch1+i));
+            }
+            System.out.println();
+        }
+    }
+}
+15)
+import java.util.*;
+public class Main {
+    public static void main(String[] args) {
+        int i, n,j;
+        Scanner sc = new Scanner(System.in);
+        System.out.println("Enter Any Number:");
+        n = sc.nextInt();
+        for (i = n; i>=1; i--)
+        {
+           for(j=1; j<=i; j++)
+           {
+               System.out.print(" "+j);
+           }
+           System.out.println();
+            }
+        }
+    }
+
+16)
+import java.util.*;
+public class Main {
+    public static void main(String[] args) {
+        int i, n, j;
+        Scanner sc = new Scanner(System.in);
+        System.out.println("Enter Any Number:");
+        n = sc.nextInt();
+        for (i = 1; i <= n; i++) {
+            for (j = 1; j <= n; j++) {
+                System.out.print(" " + j);
+            }
+            System.out.println();
+        }
+    }
+}
+
+17)
+import java.util.*;
+public class Main
+{
+    public static void main(String[] args)
+    {
+        int n,i,j,k;
+        char ch='A';
+        char sm='a';
+        Scanner sc=new Scanner(System.in);
+        System.out.println("Enter a number");
+        n=sc.nextInt();
+       for (i=1; i<=n; i++)
+       {
+           for(j=1;j<=i;j++)
+           {
+               System.out.print(j+" ");
+           }
+           System.out.println("");
+       }
+        for (i=2; i>=1; i--)
+        {
+            for(j=1;j<=i;j++)
+            {
+                System.out.print(j+" ");
+            }
+            System.out.println("");
+        }
+    }
+}
+18)
+import java.util.*;
+public class Main {
+    public static void main(String[] args) {
+        int i, n,j;
+        Scanner sc = new Scanner(System.in);
+        System.out.println("Enter Any Number:");
+        n = sc.nextInt();
+        for (i = n; i>=1; i--)
+        {
+            for(j=1; j<=i; j++)
+            {
+                System.out.print(" "+j);
+            }
+            System.out.println();
+        }
+        for (i = 2; i<=n; i++)
+        {
+            for(j=1; j<=i; j++)
+            {
+                System.out.print(" "+j);
+            }
+            System.out.println();
+        }
+    }
+}
+
+19)
+import java.util.*;
+public class Main {
+    public static void main(String[] args) {
+        int i, n,j;
+        Scanner sc = new Scanner(System.in);
+        System.out.println("Enter Any Number:");
+        n = sc.nextInt();
+        for (i = 1; i<=n; i++)
+        {
+            for(j=1; j<=i; j++)
+            {
+             if (j%2==1)
+             {
+                 System.out.print("1");
+             }
+             else {
+                 System.out.print("0");
+             }
+            }
+            System.out.println();
+        }
+    }
+}
+20) 
+import java.util.*;
+public class Main {
+    public static void main(String[] args) {
+        int i, n,j;
+        Scanner sc = new Scanner(System.in);
+        System.out.println("Enter Any Number:");
+        n = sc.nextInt();
+        for (i = 1; i<=n; i++)
+        {
+            for(j=1; j<=i; j++)
+            {
+             if (i%2==1)
+             {
+                 System.out.print("1");
+             }
+             else {
+                 System.out.print("0");
+             }
+            }
+            System.out.println();
+        }
+    }
+}
+21)
+import java.util.*;
+public class Main {
+    public static void main(String[] args) {
+        int i, n,j;
+        Scanner sc = new Scanner(System.in);
+        System.out.println("Enter Any Number:");
+        n = sc.nextInt();
+        for (i = 1; i<=n; i++)
+        {
+            for(j=1; j<=n; j++)
+            {
+             if ((i+j)%2==0)
+             {
+                 System.out.print("*");
+             }
+             else {
+                 System.out.print("#");
+             }
+            }
+            System.out.println();
+        }
+    }
+}
+
+22)
+import java.util.*;
+public class Main
+{
+    public static void main(String[] args)
+    {
+        int n,i,j,ch=65;
+        Scanner sc=new Scanner(System.in);
+        System.out.println("Enter a number");
+        n=sc.nextInt();
+        for(i=1;i<=n;i++) {
+            for (j = i; j <= n; j++) {
+                System.out.print(" " + (char)(ch++));
+            }
+            System.out.println();
+
+        }
+    }
+}
+23)
+import java.util.*;
+public class Main {
+    public static void main(String[] args) {
+        Scanner sc=new Scanner(System.in);
+        System.out.println("enter the number:");
+        int n=sc.nextInt();
+        for (int i = 0; i < n; i++) {
+            for (int k = 0; k < i; k++) {
+                System.out.print(" ");
+            }
+            for (int j = n; j > i; j--) {
+                System.out.print("* ");
+            }
+            System.out.println();
+        }
+    }
+}
+24)
+import java.util.*;
+public class Main {
+    public static void main(String[] args) {
+        Scanner sc=new Scanner(System.in);
+        System.out.println("enter the number:");
+        int n=sc.nextInt();
+        for(int i=0;i<=n;i++)
+		{
+		    for(int k=n;k>i;k--)
+		    {
+		        System.out.print(" ");
+		    }
+		    for(int j=1;j<=i;j++){
+		        System.out.print("* ");
+		    }
+		    System.out.println();
+		}
+
+             for (int i = 0; i < n; i++) {
+            for (int k = 0; k < i; k++) {
+                System.out.print(" ");
+            }
+            for (int j = 1; j <5-i; j++) {
+                System.out.print(" *");
+            }
+            System.out.println();
+ }
+}
+}
+25)
+import java.util.*;
+public class Main {
+    public static void main(String[] args) {
+        Scanner sc=new Scanner(System.in);
+        System.out.print("enter the number:");
+        int n=sc.nextInt();
+        for (int i = 0; i < n; i++) {
+            for (int k = 0; k < i; k++) {
+                System.out.print(" ");
+            }
+            for (int j = n; j > i; j--) {
+                System.out.print("* ");
+            }
+            System.out.println();
+        }
+
+            for(int i=2;i<=n;i++)
+		{
+		    for(int k=n;k>i;k--)
+		    {
+		        System.out.print(" ");
+		    }
+		    for(int j=1;j<=i;j++){
+		        System.out.print("* ");
+		    }
+		    System.out.println();
+		}
+      }
+}
+26)
+import java.util.*;
+public class Main {
+    public static void main(String[] args) {
+        Scanner sc=new Scanner(System.in);
+        System.out.print("enter the number:");
+        int n=sc.nextInt();
+        for (int i = 1; i <= n; i++) {
+            for (int k = 3; k >= i; k--) {
+                System.out.print(" ");
+            }
+            for (int j = 1; j <= i; j++) {
+                System.out.print("*");
+            }
+            System.out.println();
+        }
+   }
+}
+27)
+import java.util.*;
+public class Main {
+    public static void main(String[] args) {
+        Scanner sc=new Scanner(System.in);
+        System.out.print("enter the number:");
+        int n=sc.nextInt();
+        for (int i =n; i >= 1; i--) {
+            for (int k = 4; k>i; k--) {
+                System.out.print(" ");
+            }
+            for (int j = 1; j <= i; j++) {
+                System.out.print("*");
+            }
+            System.out.println();
+        }
+   }
+}
+28)
+import java.util.*;
+public class Main {
+    public static void main(String[] args) {
+        Scanner sc=new Scanner(System.in);
+        System.out.print("enter the number:");
+        int n=sc.nextInt();
+        for (int i =1; i <= n; i++) {
+            for (int k = 3; k>=i; k--) {
+                System.out.print(" ");
+            }
+            for (int j = 1; j <= i; j++) {
+                System.out.print("*");
+            }
+            System.out.println();
+        }
+          for (int i =3; i >= 1; i--) {
+            for (int k = n; k>i; k--) {
+                System.out.print(" ");
+            }
+            for (int j = 1; j <= i; j++) {
+                System.out.print("*");
+            }
+            System.out.println();
+        }
+}
+}
+29)
+import java.util.*;
+public class Main {
+    public static void main(String[] args) {
+        int n ;
+        Scanner sc=new Scanner(System.in);
+        System.out.println("enter the number:");
+         n=sc.nextInt();
+        // Print the first line with a plus sign in the center
+        for (int i = 0; i < 5; i++) {
+            System.out.print(" ");
+        }
+        System.out.println("+");
+
+        // Print the second line with a plus sign in the center
+        for (int i = 0; i < 5; i++) {
+            System.out.print(" ");
+        }
+        System.out.println("+");
+
+        // Print the third line with plus signs
+        System.out.print(" ");
+        for (int i = 0; i < n; i++) {
+            System.out.print("+ ");
+        }
+        System.out.println();
+
+        // Print the fourth line with a plus sign in the center
+        for (int i = 0; i < 5; i++) {
+            System.out.print(" ");
+        }
+        System.out.println("+");
+
+        // Print the fifth line with a plus sign in the center
+        for (int i = 0; i < 5; i++) {
+            System.out.print(" ");
+        }
+        System.out.println("+");
+    }
+}
+30)
+public class Main {
+    public static void main(String[] args) {
+        int n = 4; // Number of numbers in the pattern
+
+        // Print the first line with asterisks
+        System.out.print("    ");
+        for (int i = 0; i < n; i++) {
+            System.out.print("* ");
+        }
+        System.out.println();
+
+        // Print the lines with numbers and asterisks
+        for (int i = 0; i < n; i++) {
+            System.out.print("  *");
+            for (int j = 1; j <= n; j++) {
+                if (i == 4 && j == 2) {
+                    System.out.print("  ");
+                } else {
+                    System.out.print(" " + j);
+                }
+            }
+            System.out.print(" *");
+            System.out.println();
+        }
+
+        // Print the last line with asterisks
+        System.out.print("   ");
+        for (int i = 0; i < n; i++) {
+            System.out.print("* ");
+        }
+        System.out.println();
+    }
+}
+31)
+public class Main {
+    public static void main(String[] args) {
+        char startChar = 'a';
+        int n = 3; // Number of rows (half of the pattern)
+
+        // Upper part of the pattern
+        for (int i = 0; i <= n; i++) {
+            // Print characters in increasing order
+            for (int j = 0; j <= i; j++) {
+                System.out.print((char) (startChar + j) + " ");
+            }
+            // Print spaces
+            for (int k = 2 * (n - i); k > 0; k--) {
+                System.out.print("  ");
+            }
+            // Print characters in decreasing order
+            for (int l = i; l >= 0; l--) {
+                if (l != n) {
+                    System.out.print((char) (startChar + l) + " ");
+                }
+            }
+            // Move to the next line
+            System.out.println();
+        }
+
+        // Lower part of the pattern
+        for (int i = n - 1; i >= 0; i--) {
+            // Print characters in increasing order
+            for (int j = 0; j <= i; j++) {
+                System.out.print((char) (startChar + j) + " ");
+            }
+            // Print spaces
+            for (int k = 2 * (n - i); k > 0; k--) {
+                System.out.print("  ");
+            }
+            // Print characters in decreasing order
+            for (int l = i; l >= 0; l--) {
+                if (l != n) {
+                    System.out.print((char) (startChar + l) + " ");
+                }
+            }
+            // Move to the next line
+            System.out.println();
+        }
+    }
+}
+32)
+import java.util.*;
+
+public class Pattern1 {
+
+	public static void main(String[] args) {
+	Scanner sc=new Scanner(System.in);
+	System.out.println("enter the no:");
+	int n=sc.nextInt();
+	for(int i=1;i<=n;i++)
+	{
+		for(int j=1;j<=n;j++)
+		{
+			if((i==1 && j==1 )|| (i==n && j==n)||(i==1 && j==5)|| (i==5 && j==1))
+			{
+				System.out.print(" ");
+			}
+			  if((i==1 && j>1 && j<n)||(i==n && j>1 && j<n ))
+			{
+				System.out.print("*");
+					System.out.print(" ");
+			}
+		 if((i>1 && i<n && j==1)||(j==n && i>1 && i<n))
+			{
+				System.out.print("*");
+				
+			}
+			if(i>1 && j>1 && j<n && i<n)
+			{
+			    	System.out.print("  ");
+			}
+		
+			
+		}
+		System.out.println();
+	}
+			
+
+	}
+
+}
+33)
+import java.util.*;
+public class Main
+{
+    public static void main(String[] args) {
+        int n, i, j, range, flag = 0,f;
+        Scanner sc = new Scanner(System.in);
+        System.out.println("Enter a number");
+        range = sc.nextInt();
+        for (i = 1; i <= range; i++) {
+            flag = 0;
+            n = i;
+
+            for (j = 1; j <= (n / 2); j++)
+            {
+                f=j*(j+1);
+                if (f==n){
+                    flag = 1;
+                    break;
+
+                }
+                }
+                if (flag == 1)
+                {
+                    System.out.print(" " + i);
+                }
+
+            }
+
+        }
+    }
+34)
+import java.util.*;
+
+public class pronicno {
+
+	public static void main(String[] args) {
+		Scanner sc=new Scanner(System.in);
+		System.out.println("entre the no:");
+		int n=sc.nextInt();
+		int j,i,flag=0;
+		for( i=1;i<=n;i++)
+		{
+			for( j=1;j<=i;j++)
+			{
+				if(i==j*(j+1))
+				{
+					
+						System.out.print(" "+i);
+					
+				}
+			}
+			
+		}
+		
+
+	}
+
+}
+
+35)import java.util.*;
+public class Main
+{
+	public static void main(String[] args) {
+		Scanner sc=new Scanner(System.in);
+		int i,j,range,flag=0,sum=0; 
+		System.out.println("Enter value of range");
+		range=sc.nextInt();
+		for(i=1;i<=range;i++)
+		{
+		    sum=0;
+		    for( j=1;j<i;j++)
+		    {
+		        if(i%j==0)
+		        {
+		           sum=sum+j; 
+		        }
+		    }
+		    if(sum==i)
+		    {
+		        System.out.print(i+" ");
+		    }
+		}
+	
+	}
+
+36)public class primeno {
+
+	public static void main(String[] args) {
+		Scanner sc=new Scanner(System.in);
+		System.out.println("enter the no:");
+		int n=sc.nextInt();
+		int flag;
+		 for(int i=2;i<=n;i++)
+		 {
+			 flag=0;
+			 for(int j=2;j<i;j++)
+			 {
+				 if(i%j==0)
+				 {
+					 flag=1;
+					 break;
+				 }
+			 }
+			 if(flag==0)
+				 System.out.print(" "+i);
+		 }
+			
+		
+
+	}
+--------------------------------Series------------------------------------------
+
+1.print sum=1x+2x+3x+…..
+import java.util.*;
+public class Main
+{
+	public static void main(String[] args) {
+		int i,n, sum=0;
+		int X=5;
+		Scanner sc=new Scanner(System.in);
+		System.out.println("enter the number:");
+		n=sc.nextInt();
+		for(i=1;i<=n;i++)
+		{
+		    sum=sum+(i*X);
+		}
+		System.out.println("sum is:"+sum);
+	}
+}
+
+
+2.print sum=1!+2!+3!+……n!
+import java.util.*;
+public class Main
+{
+	public static void main(String[] args) {
+		int i,n,j,sum=0,f1=1;		 
+		Scanner sc=new Scanner(System.in);
+		System.out.println("enter the number:");
+		n=sc.nextInt();
+		for(i=1;i<=n;i++)
+		{
+		    for(j=i;j>=1;j--)
+		    {
+		        f1=f1*j;
+		    }
+		    sum=sum+f1;
+		}
+		System.out.println("sum is:"+sum);
+	}
+}
+
+
+3)print sum=x^1+x^2+x^3+……x^n.
+import java.util.*;
+public class Main
+{
+	public static void main(String[] args) {
+		int i,n,j,sum=0,f1=1;
+		 int x=3;
+		Scanner sc=new Scanner(System.in);
+		System.out.println("enter the number:");
+		n=sc.nextInt();
+		for(i=1;i<=n;i++)
+		{
+		    f1=1;
+		    for(j=1;j<=i;j++)
+		    {
+		        f1=f1*x;
+		    }
+		    sum=sum+f1;
+		}
+		System.out.println("sum is:"+sum);
+	}
+}
+
+4)
+print sum=1+3+5+….+n.
+import java.util.*;
+public class Main
+{
+	public static void main(String[] args) {
+		int i,n,j,sum=0,k=1;
+		 int x=3;
+		Scanner sc=new Scanner(System.in);
+		System.out.println("enter the number:");
+		n=sc.nextInt();
+		for(i=1;i<=n;i++)
+		{
+		    sum=sum+(k+x);
+		         k=k+2;
+		    }
+		   	System.out.println("sum is:"+sum);
+		}
+	}
+5)
+print sum=1.0+1.1+1.2+…..
+import java.util.*;
+public class Main
+{
+	public static void main(String[] args) {
+		int n;
+		 double sum=0.0;
+		Scanner sc=new Scanner(System.in);
+		System.out.println("enter the number:");
+		n=sc.nextInt();
+		for (double i = 1.0; i <= n; i += 0.1) {
+            sum += i;
+		}
+		   	System.out.println("sum is:"+sum);
+		}
+	}
+6)print sum=1/2+3/4+5/6+…..
+import java.util.*;
+public class Main
+{
+	public static void main(String[] args) {
+		int n,j,i;
+		Scanner sc=new Scanner(System.in);
+		System.out.println("enter the number:");
+		n=sc.nextInt();
+		double sum=0.0;
+	for (  i = 1; i <= n; i += 2) {
+            for (  j = i + 1; j <= i + 1; j++) {
+                sum += (double) i / j;
+		}
+		   	
+		}
+		System.out.println("sum is:"+sum);
+	}
+}
+7)print sum=1+4+9+……
+import java.util.*;
+public class Main
+{
+	public static void main(String[] args) {
+		int n,sum=0,i;
+		Scanner sc=new Scanner(System.in);
+		System.out.println("enter the number:");
+		n=sc.nextInt();
+		for ( i = 1 ; i <= n; i ++) {
+            sum =sum+(i*i);
+		}
+		   	System.out.println("sum is:"+sum);
+		}
+	}
+
+8.print sum=1+8+27+…
+import java.util.*;
+public class Main
+{
+	public static void main(String[] args) {
+		int n,sum=0,i;
+		Scanner sc=new Scanner(System.in);
+		System.out.println("enter the number:");
+		n=sc.nextInt();
+		for ( i = 1 ; i <= n; i ++) {
+            sum =sum+(i*i*i);
+		}
+		   	System.out.println("sum is:"+sum);
+		}
+	}
+
+9. print sum=x^1/1!+ x^2/2!+ x^3/3!+……n
+import java.util.Scanner;
+public class Main {
+    public static void main(String[] args) {
+        Scanner scanner = new Scanner(System.in);      
+        System.out.print("Enter the value of x: ");
+        double x = scanner.nextDouble();        
+        System.out.print("Enter the value of n: ");
+        int n = scanner.nextInt();        
+        double sum = 0.0;
+        for (int i = 1; i <= n; i++) {
+            double term = 1.0;
+
+            for (int j = 1; j <= i; j++) {
+                term *= x / j;
+            }
+            sum += term;
+        }        
+        System.out.println("The sum of the series is: " + sum);
+    }
+}
+10.print sum=1!/1+2!/2+3!/3+…..n
+import java.util.Scanner;
+public class Main {
+    public static void main(String[] args) {
+        Scanner scanner = new Scanner(System.in);
+        System.out.print("Enter the value of n: ");
+        int n = scanner.nextInt();
+        double sum = 0.0;
+         for (int i = 1; i <= n; i++) {
+            int factorial = 1;
+            for (int j = 1; j <= i; j++) {
+                factorial *= j;
+            }
+            sum += (double) factorial * i / i;
+        }
+        System.out.println("The sum of the series is: " + sum);
+    }
+}
+11. print sum=1^1+2^2+3^3+……
+import java.util.Scanner;
+public class Main {
+    public static void main(String[] args) {
+        Scanner scanner = new Scanner(System.in);
+        System.out.print("Enter the value of n: ");
+        int n = scanner.nextInt();
+        int sum = 0;
+           for (int i = 1; i <= n; i++) {
+            double f1 = 1;
+            for (int j = 1; j <= i; j++) {
+               f1 *= i;
+            }
+            sum += f1;
+        }
+           System.out.println("The sum of the series is: " + sum);
+        }
+    }
+12. print sum=1/1+1/3+1/5+….
+import java.util.Scanner;
+public class Main {
+    public static void main(String[] args) {
+        Scanner scanner = new Scanner(System.in);
+        System.out.print("Enter the value of n: ");
+        int n = scanner.nextInt();
+          double sum = 0.0;
+        for (int i = 1; i <= n; i++) {
+            for (int j = 1; j <= i; j += 2) {
+                if (i == j) {
+                    sum += 1.0 / i;
+                }
+            }
+        }
+        System.out.println("The sum of the series is: "+ sum);
+    }
+}
+13. print sum=1-x^2/2!+ x^4/4!+ x^6/6!+….+ x^n/n!
+import java.util.Scanner;
+public class Main {
+    public static void main(String[] args) {
+        Scanner scanner = new Scanner(System.in);
+        System.out.print("Enter the value of n and x: ");
+        int n = scanner.nextInt();
+        int x = scanner.nextInt();
+          double sum = 1.0;
+        double f1 = 1.0;
+        for (int k = 1; k <= n; k++) {
+            f1 *= -1 * (x * x) / (2 * k * (2 * k - 1));  
+            sum += f1;  
+        }
+        System.out.printf("The sum of the series is: %.2f%n", sum);
+            }
+        }
+14. print sum=1-x^3/3!+ x^5/5!+ x^7/7!+….+ x^n/n!
+import java.util.Scanner;
+public class Main {
+    public static void main(String[] args) {
+        Scanner scanner = new Scanner(System.in);
+        System.out.print("Enter the value of n and x: ");
+        int n = scanner.nextInt();
+        int x = scanner.nextInt();
+
+        double sum = 0.0;
+
+        for (int i = 1; i <= n; i++) {
+            double term = 1.0;
+             
+            for (int j = 1; j <= 2*i-1; j++) {
+                term *= x / j;
+            }
+            if (i % 2 == 0) {
+                sum -= term;
+            } else {
+                sum += term;
+            }
+        }
+        System.out.println("Sum = " + sum);
+    }
+}
+
+
+15. write a java program to print print sum=1-x^3/3!+ x^5/5!+ x^7/7!+….+ x^n/n! 
+import java.util.Scanner;
+public class Main {
+    public static void main(String[] args) {
+        Scanner scanner = new Scanner(System.in);
+        System.out.print("Enter the value of n: ");
+        int n = scanner.nextInt();
+        double x = 2.0; 
+        double sum = 0.0;
+
+        for (int i = 2; i <= n; i += 2) {
+            double numerator = Math.pow(x, i);
+            double denominator = Math.pow(2, i) * factorial(1); 
+            sum += numerator / denominator;
+        }
+
+        System.out.println("The sum of the series is:"+ sum);
+    }
+
+    public static int factorial(int num) {
+        if (num == 0 || num == 1) {
+            return 1;
+        }
+        int fact = 1;
+        for (int i = 2; i <= num; i++) {
+            fact *= i;
+        }
+        return fact;
+    }
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

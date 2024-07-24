@@ -1,0 +1,1341 @@
+
+1)import java.util.*;
+
+public class Main
+{
+	public static void main(String[] args) {
+		Scanner sc=new Scanner(System.in);
+		System.out.println("Enter the no:");
+		int n=sc.nextInt();
+		switch(n)
+		{
+		    case 10:
+		        System.out.println("its 10");
+		    break;
+		    
+		    case 20:
+		        System.out.println("its 20");
+		        break;
+		        
+		        default:
+		        System.out.println("other no");
+		        break;
+		}
+	}
+}
+
+2)
+import java.util.*;
+
+public class Main
+{
+	public static void main(String[] args) {
+		Scanner sc=new Scanner(System.in);
+		System.out.println("Enter the day no:");
+		int n=sc.nextInt();
+		String daytype="",daystring="";
+		switch(n)
+		{
+		    case 1:
+		        daystring="monday";
+		        daytype="weekday";
+		        System.out.println(daystring+" :"+daytype);
+		        break;
+		        
+		        case 2:
+		        daystring="tuesday";
+		        daytype="weekday";
+		        System.out.println(daystring+" :"+daytype);
+		        break;
+		        
+		        case 3:
+		        daystring="wednesday";
+		        daytype="weekday";
+		        System.out.println(daystring+" :"+daytype);
+		        break;
+		        
+		        case 4:
+		        daystring="thursday";
+		        daytype="weekday";
+		        System.out.println(daystring+" :"+daytype);
+		        break;
+		        
+		        case 5:
+		        daystring="friday";
+		        daytype="weekday";
+		        System.out.println(daystring+" :"+daytype);
+		        break;
+		        
+		        case 6:
+		        daystring="saturday";
+		        daytype="weekend";
+		        System.out.println(daystring+" :"+daytype);
+		        break;
+		        
+		        case 7:
+		        daystring="sunday";
+		        daytype="weekend";
+		        System.out.println(daystring+" :"+daytype);
+		        break;
+		        
+		        default:
+		        System.out.println("wrong input:");
+		        break;
+		        
+		}
+		
+	}
+}
+
+3)
+import java.util.*;
+
+public class Main
+{
+	public static void main(String[] args) {
+		Scanner sc=new Scanner(System.in);
+		System.out.println("Enter the value of a and b");
+		double a=sc.nextDouble();
+		double b=sc.nextDouble();
+		int ch;
+	 do{
+	     System.out.println("1)add\n2)swap\n3)max\n4)min\n5)Exit");
+	     System.out.println("enter  ur choice:");
+	      ch=sc.nextInt();
+	     switch(ch)
+	     {
+	         case 1:
+	             System.out.println("Addition="+(a+b));
+	             break;
+	             
+	       case 2:
+	           a=a+b;
+	           b=a-b;
+	           a=a-b;
+	            System.out.println("a="+a+"\nb="+b);
+	            break;
+	            
+	            
+	    case 3:
+	        if(a>b)
+	        {
+	            System.out.println("a is max");
+	            
+	        }
+	        else if (a<b)
+	        {
+	            System.out.println("b is max");
+	        }
+	        else{
+	            System.out.println("equal");
+	        }
+	        break;
+	        
+	        
+	   case 4:
+	       if(a>b)
+	        {
+	            System.out.println("b is min");
+	            
+	        }
+	        else if (a<b)
+	        {
+	            System.out.println("a is min");
+	        }
+	        else{
+	            System.out.println("equal");
+	        }
+	        break;
+	        
+	   case 5:
+	       System.exit(0);
+	       
+	       default:
+	       System.out.println("invalid input");
+	     }
+	 }while(ch<=5);
+	}
+	 
+}
+
+4)
+import java.util.*;
+
+public class Main
+{
+	public static void main(String[] args) {
+		Scanner sc=new Scanner(System.in);
+	
+		int ch;
+		
+	 do{
+	     System.out.println("1)Area of circle\n2)area of triangle\n3)arae of rectangle\n4)kinetic enery\n5)h.mean & a.mean\n6)exit");
+	     System.out.println("enter  ur choice:");
+	      ch=sc.nextInt();
+	     switch(ch)
+	     { case 1:
+	         System.out.println("enter the value of r:");
+	         double r=sc.nextDouble();
+	         double area=3.14*r*r;
+	         System.out.println("Area of circle:"+area);
+	         break;
+	         
+	         case 2:
+	             System.out.println("enter the value of b and h:");
+	         double b=sc.nextDouble();
+	          double h=sc.nextDouble();
+	         double ara=0.5*b*h;
+	         System.out.println("Area of triangle:"+ara);
+	         break;
+	         
+	         case 3:
+	             System.out.println("enter the value of b and l:");
+	         double base=sc.nextDouble();
+	          double l=sc.nextDouble();
+	         double areaa=base*l;
+	         System.out.println("Area of rectangle:"+areaa);
+	         break;
+	         
+	         case 4:
+	             System.out.println("enter the value of m and v:");
+	         double m=sc.nextDouble();
+	          double v=sc.nextDouble();
+	         double ke=0.5*m*v*v;
+	         System.out.println("kinetic energy:"+ke);
+	         break;
+	         
+	         case  5:
+	             System.exit(0);
+	             
+	         
+	         default:
+	         System.out.println("wrong choice");
+	         
+	 }
+	}while(ch<=5);
+	 
+}
+}
+
+5)
+import java.util.*;
+
+public class Main
+{
+	public static void main(String[] args) {
+		Scanner sc=new Scanner(System.in);
+		int n;
+	do{
+	    System.out.println("\n\n1)even/odd\n2)divisible by 17\n3)divisible by 5 & 7\n4)divisible by 5 or 7\n5)leap year\n6)+ve/-ve\n7)cal electricity bill\n8)age\n9)discount\n10)pin");
+	System.out.println("enter choice:");
+	 n=sc.nextInt();
+	switch(n)
+	{
+	    case 6:
+	         double n1=sc.nextDouble();
+		if(n1>0)
+		{
+		    System.out.println("positive");
+		}
+		else if(n1<0)
+			{
+		    System.out.println("Negative");
+		}
+		else{
+		    System.out.println("zero");
+		}
+		break;
+		
+		
+		case 3:
+		    System.out.println("Enter the no :");
+	int no=sc.nextInt();
+	if(no%5==0 && no%7==0)
+	{
+	    System.out.println("divide by 5 and 7");
+	}
+	else
+	{
+	    System.out.println("not divide by 5 and 7");
+	}
+	break;
+	
+	case 1:
+		    System.out.println("Enter the no :");
+	int numm=sc.nextInt();
+	if(numm%2==0)
+	{
+	    System.out.println("even");
+	}
+	else
+	{
+	    System.out.println("odd");
+	}
+	break;
+	
+	
+	
+	   case 2:
+	     System.out.println("Enter the no :");
+	     int num=sc.nextInt();
+	      if(num%17==0)
+	      {
+	    System.out.println("no is divisible by 17");
+	     }
+	       else
+	         {
+	    System.out.println("no is not divisible by 17");
+	       }
+	       break;
+	
+	
+	
+	  
+	
+	case 4:
+	    System.out.println("Enter the no :");
+	int noo=sc.nextInt();
+	if(noo%5==0 || noo%7==0)
+	{
+	    System.out.println("divide by 5 or 7");
+	}
+	else
+	{
+	    System.out.println("not divide by 5 or 7");
+	}
+	break;
+	
+	case 5:
+	    System.out.println("Enter the year :");
+	int y=sc.nextInt();
+	if(y%4==0 || y%100==0 || y%400== 0)
+	{
+	    System.out.println("leap year");
+	}
+	else
+	{
+	    System.out.println("not leap year");
+	}
+	break;
+	
+	case 7:
+	      System.out.println("enter the electricity unit :");
+	    double x=sc.nextDouble();
+	    double b_charge,tax,final_bill,unit_c;
+	    if(x>0 && x<=100)
+	    {
+	       unit_c=x*4.71;
+	       tax=128+(unit_c*1.17);
+	       System.out.println("total bill="+(unit_c+tax+128));
+	    }
+	    else if (x>=101 && x<=300)
+	    {
+	        unit_c=x*10.29;
+	       tax=128+(unit_c*1.17);
+	       System.out.println("total bill="+(unit_c+tax+128));
+	        
+	    }
+	    else if (x<=301 && x<=500)
+	    {
+	      unit_c=x*14.55;
+	       tax=128+(unit_c*1.17);
+	       System.out.println("total bill="+(unit_c+tax+128));  
+	    }
+	    else
+	    {
+	        unit_c=x*16.64;
+	       tax=128+(unit_c*1.17);
+	       System.out.println("total bill="+(unit_c+tax+128));
+	    }
+	    break;
+	    
+	    case 9:
+	        System.out.println("enter amount :");
+	    double amt=sc.nextDouble();
+	    if(amt<10000)
+	    {
+	        System.out.println("No Discount");
+	    }
+	    else if (amt>=10000 && amt<20000)
+	    {
+	        double disc=amt*0.05;
+	        amt=amt-disc;
+	        System.out.println("payable amount :"+amt);
+	    }
+	    else if (amt>=20000 && amt<50000)
+	    {
+	        double disc=amt*0.07;
+	        amt=amt-disc;
+	        System.out.println("payable amount :"+amt);
+	    }
+	    else{
+	        double disc=amt*0.1;
+	        amt=amt-disc;
+	        System.out.println("payable amount :"+amt);
+	        
+	    }
+	    break;
+	    
+	    
+	    
+	
+	case 11:
+	     System.exit(0);
+	     break;
+	     
+	     
+	     
+	     case 10:
+	         System.out.println("Enter the pin:");
+	         int pin=sc.nextInt();
+	         if(pin==1234)
+	         {
+	             System.out.println("valid");
+	         }
+	         else
+	         {
+	             System.out.println("invalid");
+	         }
+	         break;
+	 case 8:
+	     System.out.println("Enter the age");
+	   int age=sc.nextInt();
+	   int days=(age*365)+5;
+	   System.out.println("Age is Days="+days);
+	break;
+		
+	}
+	    
+	 
+	    
+	    
+	}while(n<=11);
+		
+	}
+}
+
+6)
+import  java.util.*;
+
+public class Main
+{
+	public static void main(String[] args) {
+		Scanner sc=new Scanner(System.in);
+		int ch;
+	do
+	{
+	    System.out.println("\n1) no is betn 2nd and 3rd no\n2)min from 3 no\n3)max from 3 no\n4)atkt\n5)check triangle\n6)blodd donation\n7)exit");
+	    System.out.println("enter choice: ");
+	    ch=sc.nextInt();
+	    switch(ch)
+	    {
+	        case 1:
+	            System.out.println("Enter the value of a,b,c:");
+	int a1=sc.nextInt();
+	int b1=sc.nextInt();
+	int c1=sc.nextInt();
+	if(a1>b1 && b1<c1 )
+	{
+	    System.out.println("a is between  b and c");
+	}
+	else
+	{
+	    System.out.println("not between ");
+	}
+	break;
+	
+	case 5:
+	    System.out.println("Enter the side1,side2,side3 of triangle:");
+		double a= sc.nextDouble();
+		double b= sc.nextDouble();	
+		double c= sc.nextDouble();
+		if( (a>0) && (b>0) && (c>0))
+		{
+		    if((a*a)+(b*b)==(c*c) || (b*b)+(c*c)==(a*a ) || (a*a)+(c*c)==(b*b) && (a!=b)&& (b!=c) && (a!=c))
+		    {
+		        System.out.println("Triangle is Right angled triangle as well as scalene also");
+		    }
+		    else if((a*a)+(b*b)==(c*c) || (b*b)+(c*c)==(a*a ) || (a*a)+(c*c)==(b*b))
+		    {
+		        System.out.println("Right angled Triangle");
+		    }
+		    else if ((a==b ) && ( b==c))
+		    {
+		        System.out.println("Equilateral triangle");
+		    }
+		    else if ((a==b) || (b==c) || (c==a) )
+		    {
+		        System.out.println("Isoscles Triangle");
+		    }
+		    else if((a!=b)&& (b!=c) && (a!=c))
+		    {
+		        System.out.println("Scalene Triangle");
+		    }
+		    else{
+		        System.out.println("Not Triangle");
+		    }
+		    
+		}
+		else{
+		    System.out.println("side can not have negative values!!!!");
+		}
+	    break;
+	    
+	    case 4:
+	        System.out.println("enter the marks of m1,m2,m3:");
+	int m1=sc.nextInt();
+	int m2=sc.nextInt();
+	int m3=sc.nextInt();
+	if(m1>=40 && m2>=40 && m3>=40)
+	{
+	    int total=m1+m2+m3;
+	    double per=(total)/3;
+	    System.out.println("percentage ="+per);
+	if(per>=70 && per<=100)
+	{
+	    System.out.println("Distinction!!");
+	}
+	else if (per>=60 && per<70)
+	{
+	    System.out.println("1st class");
+	}
+	else if (per>=55 && per<60)
+	{
+	    System.out.println("Higher 2nd Class");
+	}
+	else if (per>=50 && per<55)
+	{
+	    System.out.println("2nd class");
+	}
+	else if (per>=40 && per<50)
+	{
+	    System.out.println("Pass");
+	}
+	else{
+	    System.out.println("Fail");
+	}
+	    
+	}
+	else
+	{
+	    if((m1<40 && m3>40 && m2>40) || (m2<40 && m1>40 && m3>40) || (m3<40 && m1>40 && m2>40))
+	    {
+	        System.out.println("1 suject ATKT fail");
+	    }
+	    else
+	    {
+	        if((m1<40 && m2<40 && m3>40) || (m1<40 && m3<40 && m2>40)||(m2<40 && m3<40 && m1>40))
+	        {
+	            System.out.println("2 suject ATKT fail");
+	            
+	        }
+	        else
+	        {
+	            System.out.println(" fail");
+	        }
+	    }
+	    
+	}
+	break;
+	
+	case 3:
+	    System.out.println("ENTER THE a,b,c:");
+		double a2=sc.nextDouble();
+			double b2=sc.nextDouble();
+				double c2=sc.nextDouble();
+				double d2=(a2>b2)?(a2>c2?a2:c2):(b2>c2 ? b2:c2);
+				
+		
+			System.out.println("max no"+d2);
+			break;
+			
+			
+				case 2:
+	    System.out.println("ENTER THE a,b,c:");
+		double a3=sc.nextDouble();
+			double b3=sc.nextDouble();
+				double c3=sc.nextDouble();
+				double d3=(a3<b3)?(a3<c3?a3:c3):(b3<c3 ? b3:c3);
+				
+		
+			System.out.println("max no"+d3);
+			break;
+			
+			
+			case 6:
+			    System.out.println("enter the age,hb,weight:");
+		double age=sc.nextDouble();
+		double hb=sc.nextDouble();
+		double wt=sc.nextDouble();
+		if(age>=18 && age<50)
+		{
+		    if(hb>=12)
+		    {
+		       if(wt>=55)
+		       {
+		           System.out.println("u are eligible for  blodd donation");
+		       }
+		       else
+		       {
+		           System.out.println("u are not  eligible for  blodd donation");
+		       }
+		    }
+		    else
+		    {
+		        System.out.println("ur age is valid but hb is not eligible for blodd donation");
+		    }
+		    
+		}
+		else
+		{
+		    System.out.println("ur age is not eligible for donation");
+		}
+			    break;
+	        
+	 case 7:
+	     System.exit(0);
+	     break;
+	     
+	     default:
+	     System.out.println("wrong input");
+	     break;
+	}
+	    
+	    
+	}while(ch<=7);
+	}
+}
+
+7)import  java.util.*;
+
+public class Main
+{
+	public static void main(String[] args) {
+		Scanner sc=new Scanner(System.in);
+		int ch;
+		 do{
+		     System.out.println("\n1)max from 2 no\n2)profit ,loss\n3)quadrant\n4)atm mony\n5)exit");
+		     System.out.println("enter choice:");
+		     ch=sc.nextInt();
+		     
+		     
+		    switch(ch)
+		    {
+		         case 1:
+		         System.out.println("Enter n1 and n2");
+		double n1,n2;
+		n1=sc.nextDouble();
+		n2=sc.nextDouble();
+		if(n1>n2)
+		{
+		    System.out.println("n1 is max");
+		}
+		else if(n2>n1)
+		{
+		    System.out.println("n2 is max");
+		}
+		else{
+		    System.out.println("equal");
+		}
+		         break;
+		         
+		         case 2:
+		             System.out.println("Enter the cost price and selling price");
+	double cp=sc.nextDouble();
+	double sp=sc.nextDouble();
+
+
+	if(sp>cp)
+	{
+	    double profit=sp-cp;
+	    double per=(profit/cp)*100;
+	    System.out.println("profit ="+profit+" rs and percentage="+per+" %");
+	   
+	}
+	else if (cp>sp) 
+	{
+	     double loss=cp-sp;
+	     double per=(loss/cp)*100;
+	    System.out.println("Loss="+loss+" rs and percentage="+per+" %");
+	   
+	    
+	    
+	}
+	else
+	{
+	    System.out.println(" no profit no loss");
+	}
+		             
+		             break;
+		             
+		             case 3:
+		                 System.out.println("enter the value of x,y");
+	    double x=sc.nextDouble();
+	     double y=sc.nextDouble();
+	     if(x==0 && y==0)
+	     {
+	         System.out.println(" point on origin");
+	     }
+	     else if (x>0 && y>0)
+	     {
+	         System.out.println(" point in 1 st quadrant");
+	     }
+	     else if (x<0 && y>0)
+	     {
+	         System.out.println("point in 2nd quadrannt");
+	     }
+	     else if (x<0 && y<0)
+	     {
+	          System.out.println("point in 3rd quadrannt");
+	     }
+	     else if (x>0 && y<0){
+	          System.out.println("point in 4th quadrannt");
+	     } 
+	     else if (x>0 && y==0) 
+	     {
+	          System.out.println("point on  +ve x axis");
+	     }
+	     else if (x==0 && y>0) 
+	     {
+	          System.out.println("point on +ve y axis");
+	     }
+	     else if (x<0 && y==0)
+	     {
+	          System.out.println("point on -ve x axis ");
+	     }
+	     else
+	     {
+	          System.out.println("point on -ve y axis");
+	     }
+	      
+		                 break;
+		             case 4:
+		                 System.out.println("Enter the your withdrawl amount and balance amount:");
+	int w_amt=sc.nextInt();
+	int b_amt=sc.nextInt();
+	int code=1234;
+
+	if(w_amt<b_amt)
+	{
+	    System.out.println("enter pin no:");
+	    int pin=sc.nextInt();
+	    if(code==pin)
+	    {
+	        b_amt=b_amt-w_amt;
+	        System.out.println(w_amt+" rs is debited from your 123xxxx accnt and remain balance "+b_amt+" rs");
+	    }
+	    else{
+	        System.out.println("in corect code try again!!!!");
+	    }
+	}
+	else
+	{
+	    System.out.println("Insufficient balance");
+	}
+		                 break;
+		                 
+		                 
+		 default:
+		 System.out.println("wrong input");
+		 break;
+		    }
+		 }while(ch<=5);
+	}
+}
+
+8)validate date ,year,month
+import java.util.*;
+public class Main
+{
+	public static void main(String[] args) {
+	    Scanner sc=new Scanner(System.in);
+	    System.out.println("enter the date");
+	    int d=sc.nextInt();
+	     System.out.println("enter the month");
+	    int m=sc.nextInt();
+	     System.out.println("enter the year");
+	    int y=sc.nextInt();
+	   
+	    
+	    switch(m)
+	    {
+	        case 1:
+	            System.out.println("january");
+	            if(d>=1 && d<=31)
+	    {
+	        System.out.println("valid date in january");
+	    }
+	    else
+	    {
+	        System.out.println("invalid date in january");
+	        
+	    }
+	    break;
+	    
+	    case 2:
+	       int l;
+	      	
+	      if(y%4==0 || y%20==0 || y%100==0)
+	      {
+	          l=29;
+	      }
+	      else
+	      {
+	         l=28; 
+	      }
+	      
+	      if(d<=l)
+	       {
+	        System.out.println("valid date in feb");
+	    }
+	    else
+	    {
+	        System.out.println("invalid date in feb");
+	        
+	    }
+	    break;
+	    
+	    
+	    case 3:
+	        if(d>=1 && d<=31)
+	        {
+	        System.out.println("valid date in march");
+	    }
+	    else
+	    {
+	        System.out.println("invalid date in march");
+	        
+	    }
+	    break;
+	    
+	    
+	    case 4:
+	         if(d>=1 && d<=30)
+	        {
+	        System.out.println("valid date in april");
+	    }
+	    else
+	    {
+	        System.out.println("invalid date in april");
+	        
+	    }
+	    break;
+	    
+	    case 5:
+	         if(d>=1 && d<=31)
+	        {
+	        System.out.println("valid date may");
+	    }
+	    else
+	    {
+	        System.out.println("invalid date may");
+	        
+	    }
+	    break;
+	    
+	    case 6:
+	          if(d>=1 && d<=30)
+	        {
+	        System.out.println("valid date jun");
+	    }
+	    else
+	    {
+	        System.out.println("invalid date jun");
+	        
+	    }
+	    break;
+	    
+	    case 7:
+	        if(d>=1 && d<=31)
+	        {
+	        System.out.println("valid date july");
+	    }
+	    else
+	    {
+	        System.out.println("invalid date in july");
+	        
+	    }
+	    break;
+	    
+	    case 8:
+	        if(d>=1 && d<=31)
+	        {
+	        System.out.println("valid date aug");
+	    }
+	    else
+	    {
+	        System.out.println("invalid date in aug");
+	        
+	    }
+	    break;
+	    
+	    
+	    case 9:
+	        if(d>=1 && d<=30)
+	        {
+	        System.out.println("valid date sept");
+	    }
+	    else
+	    {
+	        System.out.println("invalid date sept");
+	        
+	    }
+	    break;
+	    
+	    
+	    
+	    case 10:
+	        if(d>=1 && d<=31)
+	        {
+	        System.out.println("valid date oct");
+	    }
+	    else
+	    {
+	        System.out.println("invalid date in oct");
+	        
+	    }
+	    break;
+	    
+	    case 11:
+	        if(d>=1 && d<=30)
+	        {
+	        System.out.println("valid date in nov");
+	    }
+	    else
+	    {
+	        System.out.println("invalid date nov");
+	        
+	    }
+	    break;
+	    
+	    
+	    case 12:
+	        if(d>=1 && d<=31)
+	        {
+	        System.out.println("valid date in dec");
+	    }
+	    else
+	    {
+	        System.out.println("invalid date in dec");
+	        
+	    }
+	    break;
+	    
+	    
+	    default:
+	    System.out.println("invalid month so can't check month!!");
+	    break;
+	    }
+	        
+	        
+	        
+	  if(y>=1900 && y<=2100)
+	  {
+	      System.out.println("valid year");
+	  }
+	  else
+	  {
+	      System.out.println("invalid year");
+	  }
+	        
+	      
+	    
+	   
+	    
+	
+	}
+}
+
+8)
+import java.util.*;
+public class Main
+{
+	public static void main(String[] args) {
+	  Scanner sc = new Scanner(System.in);
+
+        System.out.println("Enter a date (format: DD MM YYYY):");
+        int day = sc.nextInt();
+        int month = sc.nextInt();
+        int year = sc.nextInt();
+    if(month>=1 && month<=12)
+    {
+        if(year>=1000 && year<=9999)
+            {
+                if (day >= 1 && day <= 31) 
+                    {
+                        switch (month) 
+                            {
+                                case 1: case 3: case 5: case 7: case 8: case 10: case 12:
+                                System.out.println(day+"-"+month+"-"+year+" Valid date.");
+                                    if(day==31 && month==12)
+                                    {
+                                        month=1;
+                                        day=1;
+                                        year++;
+                                    }
+                                    else if(day==31 )
+                                    {
+                                       month++;
+                                        day=1;
+                                       
+                                    }
+                                    else
+                                    {
+                                       day++; 
+                                    }
+                                     System.out.println("Next dat ="+day+"-"+month+"-"+year+" Valid date.");
+                                break;
+                                case 4: case 6: case 9: case 11:
+                                    if (day <= 30)
+                                    {
+                                        if(day<30)
+                                        {
+                                            day++;
+                                            
+                                        }
+                                        else
+                                        {
+                                            day=1;
+                                            month++;
+                                        }
+                                        
+                                        
+                                        System.out.println(day+"-"+month+"-"+year+" Valid date.");
+                                    } 
+                                    else 
+                                    {
+                                        System.out.println(day+"-"+month+"-"+year+" InValid date.");
+                                    }
+                                break;
+                                 case 2:
+                                    if ((year % 4 == 0 &&  day <= 29) )
+                                        {
+                                            if(day<29)
+                                            {
+                                                day=day+1;
+                                            
+                                            }
+                                            else
+                                            {
+                                                day=1;
+                                                month++;
+                                                
+                                            }
+                                            System.out.println(day+"-"+month+"-"+year+" Valid date.");
+                                        }
+                                    else if(day <= 28) 
+                                        {
+                                             if(day<28)
+                                            {
+                                                day=day+1;
+                                            
+                                            }
+                                            else
+                                            {
+                                                day=1;
+                                                month++;
+                                                
+                                            }
+                                             System.out.println(day+"-"+month+"-"+year+" Valid date.");
+                                        }
+                                     else 
+                                         {
+                                            System.out.println(day+"-"+month+"-"+year+" InValid date.");
+                                        }
+                                break;
+           
+                            }
+                    }
+                else
+                    {
+                    System.out.println("Invalid day.");
+                    }
+            }
+        else
+            {
+                    System.out.println("Invalid year.");
+            }
+	}
+	else
+	{
+	     System.out.println("Invalid month.");
+	}
+}
+}
+
+
+9)import  java.util.*;
+
+public class Main
+{
+	public static void main(String[] args) {
+		Scanner sc=new Scanner(System.in);
+		int ch;
+		System.out.println("Enter the character");
+		char a=sc.next().charAt(0);
+		if((a>='a' && a<='z'))
+		{
+		   
+		    ch=1;
+		}
+		else if((a>='A' && a<='Z'))
+		{
+		    
+		    ch=2;
+		}
+		else if((a>='0' && a<='9'))
+		{
+		   
+		    ch=3;
+		    
+		}
+		else
+		{
+		   
+		    ch=4;
+		}
+		
+		switch(ch)
+		{
+		    case 1:
+		        System.out.println("small letter char");
+		        break;
+		   case 2:
+		   System.out.println("capital letter char");
+		        break;
+		   case 3:
+		       System.out.println("DIgit");
+		        break;
+		   case 4:System.out.println("speacial char");
+		        break;
+		   default:
+		   System.out.println("wrong input");
+		       
+		}
+	}
+}
+
+
+10)
+import  java.util.*;
+
+public class Main
+{
+	public static void main(String[] args) {
+		Scanner sc=new Scanner(System.in);
+		int ch;
+		System.out.println("Enter the character");
+		char a=sc.next().charAt(0);
+		if(a=='a' || a=='A'|| a=='e' || a=='E' || a=='i' || a=='I' || a=='o' || a=='O' || a=='u'|| a=='U')
+		{
+		    ch=1;
+		}
+		else
+		{
+		   ch=2;
+		}
+		
+		switch(ch)
+		{
+		    case 1:
+		        System.out.println("its vowel");
+		        break;
+		   case 2:
+		   System.out.println("its not vowel it can be digit,special char or consonant");
+		        break;
+		   
+		   default:
+		   System.out.println("wrong input");
+		       
+		}
+	}
+}
+
+11)
+import  java.util.*;
+
+public class Main
+{
+	public static void main(String[] args) {
+		Scanner sc=new Scanner(System.in);
+		int ch;
+		System.out.println("enter the a,b:");
+		double a=sc.nextDouble();
+		double b=sc.nextDouble();
+		
+		if(a>b)
+		{
+		    ch=1;
+		}
+		else
+		{
+		    ch=2;
+		}
+		
+	
+		switch(ch)
+		{
+		    case 1:
+		        System.out.println(" a is max");
+		        break;
+		   case 2:
+		   System.out.println("b is max");
+		        break;
+		   
+		   default:
+		   System.out.println("wrong input");
+		       
+		}
+	}
+}
+
+
+12)
+import  java.util.*;
+
+public class Main
+{
+	public static void main(String[] args) {
+		Scanner sc=new Scanner(System.in);
+		int  ch;
+		System.out.println("enter the a,b:");
+		double a=sc.nextDouble();
+		double b=sc.nextDouble();
+		
+		System.out.println("\n1)+\n2)-\n3)*\n4)division%\n");
+		System.out.println("enter operator to performe operation");
+		ch=sc.nextInt();
+		
+		
+		
+		
+		
+	
+		switch(ch)
+		{
+		    case 1 :
+		        System.out.println(" addition of "+a+"+"+b+"="+(a+b));
+		        break;
+		   case 2:
+		   System.out.println("subtraction of "+a+"-"+b+"="+(a-b));
+		        break;
+		         case 3:
+		   System.out.println("multiplication of "+a+"*"+b+"="+(a*b));
+		        break;
+		        
+		         case 4:
+		    System.out.println("division of "+a+" %"+b+"="+(a/b));
+		        break;
+		   
+		   default:
+		   System.out.println("wrong input");
+		       
+		}
+	}
+}
+
+13)
+import  java.util.*;
+
+public class Main
+{
+	public static void main(String[] args) {
+		Scanner sc=new Scanner(System.in);
+	 String ch;
+        int amt;
+        int fiveh,twoh,h,fifty,twenty,ten,five,two,one;
+        System.out.println("Enter the amount =");
+        amt=sc.nextInt();
+        fiveh=amt/500;
+        ch="fiveh";
+        
+switch(ch)
+{
+    case "fiveh":
+        System.out.println("500*"+fiveh+"="+(500*fiveh));
+        break;
+}
+amt=amt%500;
+twoh=amt/200;
+ch="twoh";
+switch(ch)
+{
+   
+        
+  case "twoh":
+      System.out.println("200*"+twoh+"="+(200*twoh));
+      break;
+}
+amt=amt%200;
+h=amt/100;
+ch="h";
+switch(ch)
+{ case "h":
+    System.out.println("100*"+h+"="+(100*h));
+    break;
+}
+amt=amt%100;
+fifty=amt/50;
+ch="fifty";
+
+switch(ch)
+{
+    case "fifty":
+    System.out.println("50*"+fifty+"="+(50*fifty));
+    break;
+}
+amt=amt%50;
+twenty=amt/20;
+ch="twenty";
+
+switch(ch)
+{
+    case "twenty":
+    System.out.println("20*"+twenty+"="+(20*twenty));
+    
+    
+    
+    break;
+}
+
+amt=amt%20;
+ten=amt/10;
+ch="ten";
+switch(ch)
+{ case "ten":
+    System.out.println("10*"+ten+"="+(10*ten));
+    break;
+}
+
+amt=amt%10;
+five=amt/5;
+ch="five";
+switch(ch)
+
+{
+    case "five":
+    System.out.println("5*"+five+"="+(5*five));
+    
+    break;
+}
+amt=amt%5;
+two=amt/2;
+ch="two";
+
+switch(ch)
+{ case "two":
+    System.out.println("2*"+five+"="+(2*two));
+    break;
+}
+amt=amt%2;
+one=amt/1;
+ch="one";
+switch(ch)
+{ case "one":
+    System.out.println("1*"+one+"="+(1*one));
+    break;
+}
+
+
+}
+}

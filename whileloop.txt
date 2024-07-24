@@ -1,0 +1,1092 @@
+
+1)Factorial
+import java.util.*;
+public class Main
+{
+	public static void main(String[] args) {
+	    	int n,f1=1,i;
+	    Scanner sc=new Scanner(System.in);
+	     System.out.println("Enter n");
+	    n=sc.nextInt();
+	   
+	    
+	
+		i=n;
+		while(i>1)
+		{
+		    f1=f1*i;
+		    i--;
+		}
+		System.out.println("f1=" +f1);
+	}
+}
+2)Multiplication Table
+import java.util.*;
+public class Main
+{
+    public static void main (String args[]){
+        int n, i = 1, f1 = 1;
+        System.out.println("Enter n:");
+        Scanner sc = new Scanner(System.in);
+        n = sc.nextInt();
+        
+        while (i <= 10) {
+            f1 = n * i;
+            System.out.println(n + "*" + i + "=" + f1);
+            i++;
+        }
+    }
+}
+3)prime
+import java.util.*;
+public class Main
+{
+    public static void main (String args[]){
+        int n,i=2,flag= 0;
+        System.out.println("Enter n:");
+        Scanner sc = new Scanner(System.in);
+        n = sc.nextInt();
+        
+        while (i <=(n/2))
+        {
+            if(n%i==0)
+            {
+                flag=1;
+            }
+            
+            i++;
+        }
+        if(flag==0)
+        {
+            System.out.println("PRIME");
+        }
+        else{
+            System.out.println("NOT PRIME");
+        }
+    }
+}
+4)Pronic no.
+import java.util.*;
+public class Main
+{
+    public static void main (String args[]){
+        int n,i=2,flag= 0;
+        System.out.println("Enter n:");
+        Scanner sc = new Scanner(System.in);
+        n = sc.nextInt();
+        
+        while (i <=n)
+        {
+            if(n==(i*(i+1)))
+            {
+                flag=1;
+                break;
+            }
+            
+            i++;
+        }
+        if(flag==1)
+        {
+            System.out.println("Pronic");
+        }
+        else{
+            System.out.println("Not Pronic");
+        }
+    }
+}
+5)Perfect
+import java.util.*;
+public class Main
+{
+    public static void main (String args[]){
+        int n,i=1;
+        System.out.println("Enter n:");
+        Scanner sc = new Scanner(System.in);
+        n = sc.nextInt();
+		 while(i<n) {
+			 if(n%i==0)
+				 f+=i;
+			 i++;
+		 }
+		 if(f==n)
+			 System.out.println("Perfect number");
+		 else
+			 System.out.println("Not a perfect number");}
+}		
+6.1)Fibonacci
+import java.util.*;
+public class Main
+{
+public static void main(String[] args) {
+		Scanner sc=new Scanner(System.in);
+ n = sc.nextInt();
+	if(n<=0)
+ {
+	System.out.println("Invalid");
+		}
+		else {
+			int i=1;
+		while(i<n) {
+			System.out.print(a+" ");
+			f=a+b;
+			a=b;
+			b=f;
+			i++;
+		}
+		System.out.print(a+" ");
+6.2)		}
+import java.util.*;
+public class Main
+{
+	public static void main(String[] args) {
+		Scanner sc=new Scanner(System.in);
+
+		int n,a=0,b=1,f=0;
+		System.out.println("Enter n");
+		n=sc.nextInt();
+		if(n<=0) {
+			System.out.println("Invalid");
+		}
+		else {
+		while(f<=n) {
+			System.out.print(a+" ");
+			f=a+b;
+			a=b;
+			b=f;
+		}
+		System.out.print(a+" ");
+		}
+		
+7)
+import java.util.*;
+public class Main
+{
+	public static void main(String[] args) {
+		Scanner sc=new Scanner(System.in);
+ n = sc.nextInt();
+
+		int n1,sum=0;
+		while(n>0) {
+			n1=n%10;
+			n=n/10;
+			sum+=n1;
+		}
+		System.out.println("Sum = "+sum);
+		
+8)
+import java.util.*;
+public class Main
+{
+	public static void main(String[] args) {
+		Scanner sc=new Scanner(System.in);	
+ n = sc.nextInt();
+		int n1,sum=0;
+		while(n>0) {
+			n1=n%10;
+			n=n/10;
+			sum=(sum*10)+n1;
+		}
+		System.out.println("Reverse = "+sum);
+}
+}
+}
+		
+9)
+import java.util.*;
+public class Main
+{
+	public static void main(String[] args) {
+		Scanner sc=new Scanner(System.in);
+                 n = sc.nextInt();
+		int n1,sum=0,t=n;
+		while(n>0) {
+			n1=n%10;
+			n=n/10;
+			sum=(sum*10)+n1;
+		}
+		if(sum==t)
+			System.out.println("Palindrom");
+		else
+			System.out.println("Not palindrom");
+}
+}
+10)
+import java.util.*;
+public class Main
+{
+	public static void main(String[] args) {
+		Scanner sc=new Scanner(System.in);
+ n = sc.nextInt();
+		int n1,sum=0,t=n;
+		while(n>0) {
+			n1=n%10;
+			n=n/10;
+			sum=sum+(n1*n1*n1);
+		}
+		if(sum==t)
+			System.out.println("Armstrong");
+		else
+			System.out.println("Not armstrong");
+}
+}
+11)
+import java.util.*;
+public class Main
+{
+	public static void main(String[] args) {
+		Scanner sc=new Scanner(System.in);
+ n = sc.nextInt();
+		int n1=0,sum=0,n2;
+		n2=n%10;
+		while(n>0) {
+			n1=n%10;
+			n=n/10;
+		}
+		System.out.println("Sum is "+(n1+n2));
+}
+}
+
+12)
+import java.util.*;
+public class Main
+{
+	public static void main(String[] args) {
+		Scanner sc=new Scanner(System.in);
+ n = sc.nextInt();
+		int n1,sum=0;
+		while(n>0) {
+			n1=n%10;
+			n=n/10;
+			sum++;
+		}
+		System.out.println("Digits are "+sum);
+}
+}
+
+13)
+import java.util.*;
+public class Main
+{
+	public static void main(String[] args) {
+		Scanner sc=new Scanner(System.in);
+ n = sc.nextInt();
+		int n1,ce=0,co=0,cz=0;
+		while(n>0) {
+			n1=n%10;
+			n=n/10;
+			if(n1==0)
+				cz++;
+			else if(n1%2!=0)
+				co++;
+			else
+				ce++;
+		}
+		System.out.println("Even "+ce+" Odd "+co+" Zero "+cz);
+		
+14)
+import java.util.*;
+public class Main
+{
+	public static void main(String[] args) {
+		Scanner sc=new Scanner(System.in);
+ n = sc.nextInt();
+		int n1,i,cnt=0,flag;
+		while(n>0) {
+			n1=n%10;
+			i=2;
+			flag=1;
+			while(i<n1) {
+				if(n1%i==0) {
+					flag=0;
+					break;
+				}
+				i++;
+			}
+			if(n1==1) 
+				flag=0;
+			if(flag==1) 
+				cnt++;
+			n=n/10;
+		}
+		System.out.println("Prime digits are "+cnt);*/
+
+	}
+
+15)
+import java.util.*;
+public class Main
+{
+    public static void main(String[] args)
+    {
+        int n,f1=1,i,n1,t,sum=0;
+        Scanner sc=new Scanner(System.in);
+        System.out.println("Enter a number");
+        n = sc.nextInt();
+        t=n;
+        while(n>0)
+        {
+            n1=n%10;
+            f1=1;
+            for(i=1;i<=n1;i++)
+            {
+                f1*=i;
+            }
+            sum+=f1;
+            n=n/10;
+        }
+        if(sum==t)
+        {
+            System.out.println("Krishnmurty ");
+        }
+        else
+        {
+            System.out.println("Not Krishnmurty");
+ }
+}
+}
+
+
+16)
+import java.util.*;
+public class Main
+{
+    public static void main (String args[]){
+        int n,n1,n2,sum=0,i;
+        System.out.println("Enter n:");
+        Scanner sc = new Scanner(System.in);
+        n = sc.nextInt();
+        while(n>0)
+        {
+            n1=n%10;
+            n=n/10;
+            n2=n%10;
+            sum=sum+(n1*n2);
+        }
+        System.out.println("sum="+sum);
+	}
+}
+17)
+import java.util.*;
+public class Main
+{
+	public static void main(String[] args) {
+	    int n1,n;
+	    Scanner sc=new Scanner(System.in);
+	    System.out.println("enter the number:");
+	    n=sc.nextInt();
+	int rev=0;
+		while(n>0) {
+			n1=n%10;
+			rev=(rev*10)+n1;
+			n=n/10;
+		}
+		while(rev>0) {
+			n1=rev%10;
+			switch(n1) {
+			case 0:
+				System.out.print("zero ");
+				break;
+			case 1:
+				System.out.print("one ");
+				break;
+			case 2:
+				System.out.print("two ");
+				break;
+			case 3:
+				System.out.print("three ");
+				break;
+			case 4:
+				System.out.print("four ");
+				break;
+			case 5:
+				System.out.print("five ");
+				break;
+			case 6:
+				System.out.print("six ");
+				break;
+			case 7:
+				System.out.print("seven ");
+				break;
+			case 8:
+				System.out.print("eight ");
+				break;
+			case 9:
+				System.out.print("nine ");
+				break;
+			}
+			rev=rev/10;
+		}
+	}
+}
+
+18)
+import java.util.*;
+public class Main
+{
+	public static void main(String[] args) {
+	    int n,p,i=0,rev,res,s=0,sum=0;
+	    Scanner sc=new Scanner(System.in);
+	    System.out.println("enter the number:");
+	    n=sc.nextInt();
+	    p=n;
+	    while(p>0)
+	    {
+	        rev=p%10;
+	        s=s*10+rev;
+	        p=p/10;
+	    }
+	    while(s>0)
+	    {
+	        res=s%10;
+	        i++;
+	        sum=sum+(int)Math.pow(res,i);
+	        s=s/10;
+	    }
+	    if(sum==n){
+	    System.out.println(n+" is a disarium number");
+	}
+	else{
+	    System.out.println(n+" is not disarium number");
+	}
+}
+}
+19)
+import java.util.*;
+public class Main
+{
+	public static void main(String[] args) {
+	    int n ,p,x=0;
+	    Scanner sc=new Scanner(System.in);
+	    System.out.println("enter the number:");
+	    n=sc.nextInt();
+	    p=n;
+	     while(n>9){
+	         int s=0;
+	        
+	         while(n!=0)
+	         {
+	           s=s+(n%10);
+	           n=n/10;
+	         }
+	          n=s;
+	     }
+	    if(n==1){
+	    System.out.println(p+" is a magic number");
+	}
+	else{
+	    System.out.println(p+" is not magic number");
+	}
+}
+}
+20)
+import java.util.*;
+public class Main
+{
+	public static void main(String[] args) {
+	    int a,b,i,j,c=0,d=0,x=0;
+	    Scanner sc=new Scanner(System.in);
+	    System.out.println("enter the number a and b:");
+	    a=sc.nextInt();
+	    b=sc.nextInt();
+	     
+	     for(i=1;i<=a;i++)
+	     {
+	         if(a%i==0)
+	         {
+	         c++;
+	         }
+	     }
+	     for(j=1;j<=b;j++)
+	     {
+	         if(b%j==0)
+	         {
+	         d++;
+	         }
+	     }
+	     x=Math.abs(a-b);
+	    if(c==2 && d==2 && x==2){
+	    System.out.println(" It is a twins prime number");
+	}
+	else{
+	    System.out.println("It is not twins prime number");
+	}
+}
+}
+21)
+import java.util.*;
+public class Main
+{
+	public static void main(String[] args) {
+	    int n,p,rev,s=0,i,c=0;
+	    Scanner sc=new Scanner(System.in);
+	    System.out.println("enter the number a and b:");
+	    n=sc.nextInt();
+         
+         p=n;	     
+	     for(i=1;i<=p;i++)
+	     {
+	         if(p%i==0)
+	         {
+	         c++;
+	         }
+	     }
+	     while(n>0)
+	     {
+	         rev=n%10;
+	         s=s*10+rev;
+	         n=n/10;
+	     }
+	     
+	    if(c==2 && p==s)
+	    {
+	    System.out.println(" It is a prime palindrome number");
+     	}
+	else{
+	    System.out.println("It is not prime palindrome number");
+	   }
+   }
+}
+22)
+import java.util.*;
+public class Main
+{
+	public static void main(String[] args) {
+	    Scanner sc=new Scanner(System.in);
+	    System.out.println("enter the number");
+	    int n=sc.nextInt();
+	    int temp=n;
+	    int outer_sum=0;
+	    int inner_sum=0;
+         while(n!=0)
+         {
+             int r=n%10;
+             if(n==temp || n<10){
+             outer_sum=outer_sum+r;
+             }
+             else{
+             inner_sum=inner_sum+r;
+         }
+            n=n/10;
+         }
+   	    if(inner_sum==outer_sum)
+	    {
+	    System.out.println(" It is a xylem number");
+     	}
+	else{
+	    System.out.println("It is not pholem number");
+	   }
+   }
+}
+ 23) upto n armstrong
+	Scanner sc=new Scanner(System.in);
+	System.out.println("enter the range :");
+	int range= sc.nextInt();
+	int sum,n,n1;
+	for(int i=1;i<=range;i++)
+	{
+		sum=0;
+		 n=i;
+		//n1=0;
+		while(n>0)
+		{
+			n1=n%10;
+			
+			n=n/10;
+			sum=sum+(n1*n1*n1);
+			
+		}
+		if(sum==i)
+		{
+			System.out.print(" "+i);
+		}
+	}
+	
+	
+ 24) pallindrime up to n
+	Scanner sc=new Scanner(System.in);
+	System.out.println("enter the range :");
+	int range= sc.nextInt();
+	
+	int n,n1,rev;
+	for(int i=1;i<=range;i++)
+	{
+		n=i;
+		rev=0;
+		n1=0;
+		while(n>0)
+		{
+			n1=n%10;
+			rev=(rev*10)+n1;
+			n=n/10;
+		}
+		if(rev==i)
+		{
+			System.out.print(" "+i);
+		}
+		
+	}
+
+	
+25) krishnamurthy(1 2 145 40585)
+	Scanner sc=new Scanner(System.in);
+	System.out.println("enter the range :");
+	int range= sc.nextInt();
+	int fact,sum,n,n1;
+	for(int i=1;i<=range;i++)
+	{
+		n=i;
+		sum=0;
+		n1=0;
+		
+		while(n>0)
+		{
+			fact=1;
+			n1=n%10;
+			while(n1>0)
+			{
+				fact=fact*n1;
+				n1--;
+			}
+			n=n/10;
+			sum=sum+fact;
+         }
+		
+		
+		if(sum==i)
+		{
+			System.out.print(" "+i);
+		}
+	}
+	
+	
+	
+26) dissarium no
+	Scanner sc=new Scanner(System.in);
+	System.out.println("enter the range :");
+	int range= sc.nextInt();
+	int f,n,n1,n2,cnt,p,sum;
+	for(int i=1;i<=range;i++)
+	{
+		p=n=i;
+		
+		cnt=0;
+		n1=0;
+		n2=0;
+		while(n>0) 
+		{
+			n1=n%10;
+			cnt++;
+			n=n/10;
+		}
+		sum=0;
+		while(p>0)
+		{
+			n2=p%10;
+			f=1;
+			for(int j=cnt;j>0;j--)
+			{
+				f=f*n2;
+			}
+			sum=sum+f;
+			cnt--;
+			p=p/10;
+        }
+		if(i==sum)
+		{
+			System.out.print(" "+i);
+		}
+		
+	}
+	
+27)  xylem and phloem
+	Scanner sc=new Scanner(System.in);
+	System.out.println("enter the range :");
+	int range= sc.nextInt();
+	int n,first,last,n1,p,sum;
+	for(int i=1;i<=range;i++)
+	{
+		p=n=i;
+		first=0;
+		last=0;
+		n1=0;
+		last=n%10;
+		sum=0;
+		while(n>0)
+		{
+			first=n%10;
+			n=n/10;
+			
+		}
+		while(p>0)
+		{
+			n1=p%10;
+			
+			if(n1!=first && n1!=last)
+			{
+				sum=sum+n1;
+			}
+			p=p/10;
+		}
+		if((first+ last) == sum)
+		{
+			System.out.println("xylem: "+i);
+			
+		}
+		else
+		{
+		System.out.println("phloem : "+i);
+		
+		}
+		
+	}
+
+	
+28) prime pallindrome
+	Scanner sc=new Scanner(System.in);
+	System.out.println("enter the range :");
+	int range= sc.nextInt();
+	int n,j,rev,n1;
+	for(int i=1;i<=range;i++)
+	{
+		n=i;
+		j=2;
+		int flag=0;
+		while(j<n)
+		{
+			if(n%j==0)
+			{
+				flag=1;
+				break;
+			}
+			j++;
+		}
+		rev=0;
+		n1=0;
+		while(n>0)
+		{
+			n1=n%10;
+			rev=(rev*10)+n1;
+			n=n/10;
+		}
+		
+		if(flag==0 && rev==i)
+		{
+			System.out.print(" "+i);
+		}
+		
+	}
+	
+	
+29) twin prime
+	
+	  Scanner sc=new Scanner(System.in);
+	System.out.println("enter the range :");
+	int range= sc.nextInt();
+	int n1,n2,j,flag1,flag2,k;
+    for(int i=1;i<=range;i++)
+    {
+    	n1=i;
+    	n2=i+2;
+    	j=2;
+    	k=2;
+    	flag1=0;
+    	flag2=0;
+    	while(j<n1)
+    	{
+    		if(n1%j==0)
+    		{
+    			flag1=1;
+    			break;
+    		}
+    		j++;
+    	}
+    	while(k<n2)
+    	{
+    		if(n2%k==0)
+    		{
+    			flag2=1;
+    			break;
+    		}
+    		k++;
+    	}
+    	if(flag1==0 && flag2==0 && (n1-n2)==-2)
+    	{
+    		System.out.println(" "+n1+" "+n2);
+    	}
+    }
+	
+30) magic no up to n
+	Scanner sc=new Scanner(System.in);
+	System.out.println("enter the range :");
+	int range= sc.nextInt();
+	int n,sum=0,n1;
+	for(int i=1;i<=range;i++)
+	{
+		n=i;
+		while(n>0)
+		{
+			sum=0;
+			n1=0;
+			while(n>0)
+			{
+			n1=n%10;
+			n=n/10;
+			sum=sum+n1;
+			}
+			
+			n=sum;
+		}
+		if(sum==1)
+		{
+			System.out.println(" "+i);
+		}
+		
+	}
+31)decimal to binary
+import java.util.*;
+public class Main
+{
+    
+	public static void main(String[] args) {
+	    int n,n1,p=1,sum=0;
+	    Scanner sc=new Scanner(System.in);
+	    System.out.println("Enter numbers");
+	    n=sc.nextInt();
+	    
+	    while(n>0)
+	    {
+	        n1=n%2;
+	        n=n/2;
+	        sum=sum+(n1*p);
+	        p=p*10;
+	    }
+	    System.out.println("Binary="+sum);
+	
+	}
+}
+32)binary to decimal
+import java.util.*;
+public class Main
+{
+    
+	public static void main(String[] args) {
+	    int n,n1,p=1,sum=0;
+	    Scanner sc=new Scanner(System.in);
+	    System.out.println("Enter numbers");
+	    n=sc.nextInt();
+	    
+	    while(n>0)
+	    {
+	        n1=n%10;
+	        n=n/10;
+	        sum=sum+(n1*p);
+	        p=p*2;
+	    }
+	    System.out.println("Decimal="+sum);
+	
+	}
+}
+33)decimal to octal
+import java.util.*;
+public class Main
+{
+    
+	public static void main(String[] args) {
+	    int n,n1,p=1,sum=0;
+	    Scanner sc=new Scanner(System.in);
+	    System.out.println("Enter numbers");
+	    n=sc.nextInt();
+	    
+	    while(n>0)
+	    {
+	        n1=n%8;
+	        n=n/8;
+	        sum=sum+(n1*p);
+	        p=p*10;
+	    }
+	    System.out.println("Octal="+sum);
+	
+	}
+}
+34)octal to decimal
+import java.util.*;
+public class Main
+{
+    
+	public static void main(String[] args) {
+	    int n,n1,p=1,sum=0;
+	    Scanner sc=new Scanner(System.in);
+	    System.out.println("Enter numbers");
+	    n=sc.nextInt();
+	    
+	    while(n>0)
+	    {
+	        n1=n%10;
+	        n=n/10;
+	        sum=sum+(n1*p);
+	        p=p*8;
+	    }
+	    System.out.println("decimal="+sum);
+	
+	}
+}
+35)
+		int n,a,b,i,gcd=0,lcm;
+		System.out.println("Enter a ");
+		a=sc.nextInt();
+		System.out.println("Enter b ");
+		b=sc.nextInt();
+		if(a<b)
+			n=a;
+		else
+			n=b;
+		for(i=1;i<=n;i++) {
+			if(a%i!=0)
+				continue;
+			if(b%i!=0)
+				continue;
+			gcd=i;
+		}
+		lcm=(a*b)/gcd;
+		System.out.println("GCD "+gcd+" LCM "+lcm);*/
+
+	}
+
+}
+36)
+int c0=0,c1=0,c2=0,c3=0,c4=0,c5=0,c6=0,c7=0,c8=0,c9=0;
+		while(num>0) {
+			n1=num%10;
+			switch(n1) {
+			case 0:
+				c0++;
+				break;
+			case 1:
+				c1++;
+				break;
+			case 2:
+				c2++;
+				break;
+			case 3:
+				c3++;
+				break;
+			case 4:
+				c4++;
+				break;
+			case 5:
+				c5++;
+				break;
+			case 6:
+				c6++;
+				break;
+			case 7:
+				c7++;
+				break;
+			case 8:
+				c8++;
+				break;
+			case 9:
+				c9++;
+				break;
+			}
+			num=num/10;
+		}
+		for(j=0;j<c0;j++)
+			System.out.print("0 ");
+		for(j=0;j<c1;j++)
+			System.out.print("1 ");
+		for(j=0;j<c2;j++)
+			System.out.print("2 ");
+		for(j=0;j<c3;j++)
+			System.out.print("3 ");
+		for(j=0;j<c4;j++)
+			System.out.print("4 ");
+		for(j=0;j<c5;j++)
+			System.out.print("5 ");
+		for(j=0;j<c6;j++)
+			System.out.print("6 ");
+		for(j=0;j<c7;j++)
+			System.out.print("7 ");
+		for(j=0;j<c8;j++)
+			System.out.print("8 ");
+		for(j=0;j<c9;j++)
+			System.out.print("9 ");
+
+	}
+
+}
+37)
+do {
+			n1=n%10;
+			n=n/10;
+			sum+=n1;
+		}while(n>0);
+		System.out.println("Sum is "+sum);
+		
+38)ATM
+import java.util.*;
+public class Main
+{
+    public static void main(String[] args) {
+	    double amt=20000,pin=1234,pin1,pin2,a,current,interestrate;
+	    Scanner sc=new Scanner(System.in);
+	    System.out.println("Enter the pin");
+	    pin1=sc.nextInt();
+	    if(pin1==pin)
+	    {
+	        System.out.println("1.show balance");
+	         System.out.println("2.Withdraw money");
+	          System.out.println("3.Deposite money");
+	           System.out.println("4.change pin");
+	           System.out.println("5.Interest");
+	            System.out.println("Enter your choice");
+	        int ch=sc.nextInt();
+	        switch(ch){
+	            case 1:System.out.println("Your current balance is "+amt);
+	            break;
+	            case 2:System.out.println("Enter the amount to withdraw");
+	              a=sc.nextInt();
+	              if(amt>=a)
+	              {
+	                  
+	                      System.out.println("Please collect the cash"+a);
+	                      current=amt-a;
+	                      System.out.println("Current balance is"+current);
+	              }
+	              else
+	              {
+	                   System.out.println("Your account does not have sufficient balaance");
+	              }
+	              break;
+	              case 3:
+	                  System.out.println("Enter amount to deposit ");
+	                 a=sc.nextInt();
+	                 current=amt+a;
+	                 System.out.println("Your current balance is"+current);
+	                 break;
+	                 case 4:
+	                     System.out.println("Change your pin");
+	                     System.out.println("Enter your previous pin");
+	                     int prepin=sc.nextInt();
+	                     if(prepin==pin){
+	                                 System.out.println("Enter new pin");
+	                                 pin2=sc.nextInt();
+	                                 pin1=pin2;
+	                                         System.out.println("Your pin is changed");
+	                     }
+	                                         break;
+	                case 5:
+	                       System.out.println("Enter how many years");
+	                       int years=sc.nextInt();
+	                       interestrate=sc.nextInt();
+	                      int interest=current*Math.pow((1+interestrate),years)-current;
+	                       System.out.println("interest is"+interest);
+	                       
+	                                            
+	        }
+	    }
+	    else{
+	        System.out.println("Pin is wrong");
+	    }
+	}
+}
